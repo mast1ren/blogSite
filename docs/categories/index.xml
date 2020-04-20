@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on masteren的填坑之旅</title>
+    <link>http://example.org/categories/</link>
+    <description>Recent content in Categories on masteren的填坑之旅</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    
+        <atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PAT(Basic level)Practice 题解</title>
+      <link>http://example.org/posts/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</link>
+      <pubDate>Sun, 31 Mar 2019 21:25:00 +0800</pubDate>
+      
+      <guid>http://example.org/posts/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</guid>
+      <description>PAT(Basic level)题解 题解已移至CSDN</description>
+    </item>
+    
+    <item>
+      <title>Hello Blog</title>
+      <link>http://example.org/posts/hello-world-again/</link>
+      <pubDate>Wed, 27 Mar 2019 14:00:00 +0800</pubDate>
+      
+      <guid>http://example.org/posts/hello-world-again/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
