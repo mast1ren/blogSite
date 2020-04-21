@@ -1,5 +1,5 @@
 baseURL = "https://masterenlu.github.io/blogSite/"
-languageCode = "cn"
+languageCode = "zh-cn"
 title = "masteren的填坑之旅"
 theme = "pure"
 publishDir = "docs"
