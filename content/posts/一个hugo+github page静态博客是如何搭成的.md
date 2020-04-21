@@ -92,7 +92,7 @@ publishDir = "docs"
 
 按理说按照上面的步骤建好github pages之后直接访问域名就可以看到网站了，今天早上打开之后发现是这个样子的
 
-![image-20200421093612212](https://masterenlu.github.io/blogSite/img/一个hugo+github pages静态博客是如何搭成的/image-20200421093612212.png)
+![image-20200421093612212](https://masterenlu.github.io/blogSite/img/image-20200421093612212.png)
 
 然后在我一顿操作之后突然就好了，至今不清楚到底是因为啥。
 
