@@ -45,7 +45,7 @@
 <meta itemprop="description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面 注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记录一">
 <meta itemprop="datePublished" content="2020-04-20T18:25:03&#43;08:00" />
 <meta itemprop="dateModified" content="2020-04-20T18:25:03&#43;08:00" />
-<meta itemprop="wordCount" content="1992">
+<meta itemprop="wordCount" content="2061">
 
 
 
@@ -270,8 +270,8 @@
 	</span>
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1992字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2061字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
@@ -346,7 +346,10 @@ $ git push -u origin master
 </code></pre></div><p>以打开目录，但是默认是关闭的，可以更改 <code>themes\pure\layouts\partials\sidebar-toc.html</code> 里第二行为</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">aside</span> <span style="color:#a6e22e">collapse:</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sidebar sidebar-toc collapse in&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;collapseToc&#34;</span> <span style="color:#a6e22e">itemscope</span> <span style="color:#a6e22e">itemtype</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://schema.org/WPSideBar&#34;</span>&gt;
 </code></pre></div><p>就可以默认开启目录</p>
-<h2 id="heading"></h2>
+<h2 id="开启评论">开启评论</h2>
+<p>因为之前用的也是gitalk，所以这次就直接搬过来了。然后就出现了问题：</p>
+<p><img src="https://masterenlu.github.io/blogSite/static/img/image-20200421162759418.png" alt="image-20200421162759418"></p>
+<p>查了一下是 <code>Authorization callback URL</code> 这个选项配置错误了，应该是仓库的git地址</p>
 
     </div>
     <div class="article-footer">

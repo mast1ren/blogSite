@@ -144,4 +144,13 @@ config:
 
 就可以默认开启目录
 
-## 
+## 开启评论
+
+因为之前用的也是gitalk，所以这次就直接搬过来了。然后就出现了问题：
+
+![image-20200421162759418](https://masterenlu.github.io/blogSite/static/img/image-20200421162759418.png)
+
+ 查了一下是 `Authorization callback URL` 这个选项配置错误了，应该是仓库的git地址
+
+
+
