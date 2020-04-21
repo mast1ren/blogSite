@@ -42,7 +42,7 @@
 <meta itemprop="description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面 注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记录一">
 <meta itemprop="datePublished" content="2020-04-20T18:25:03&#43;08:00" />
 <meta itemprop="dateModified" content="2020-04-20T18:25:03&#43;08:00" />
-<meta itemprop="wordCount" content="2248">
+<meta itemprop="wordCount" content="2215">
 
 
 
@@ -249,7 +249,7 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2248字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2215字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5分 </span>
       </div>
     </div>
@@ -308,8 +308,7 @@
 <p>By default, the <code>static/</code> directory in the site project is used for all <strong>static files</strong> (e.g. stylesheets, JavaScript, images). The static files are served on the site root path (eg. if you have the file <code>static/image.png</code> you can access it using <code>http://{server-url}/image.png</code>, to include it in a document you can use <code>![Example image](/image.png) )</code>.</p>
 </blockquote>
 <p>那么问题来了，使用这种相对路径插入的时候本地是识别不出来的，md文件在 <code>content\posts</code> 文件夹，图片在 <code>static</code> 文件夹，所以在本地查看的时候需要按照完整的相对路径查看，但是在发布到page上时又要更改过来，很麻烦。</p>
-<p>而且使用官方的相对路径，要求<strong>发布的网页必须在 <code>publish</code> 文件夹里</strong>，<code>docs</code> 文件夹不生效，原因未知。</p>
-<p>然后我想了一下，能不能不更改发布目录，在发布之后将  <code>publish</code> 直接复制到 <code>docs</code> 里</p>
+<p>而且使用官方的相对路径，要求<strong>发布的网页必须在 <code>public</code> 文件夹里</strong>，<code>docs</code> 文件夹不生效，原因未知。</p>
 
     </div>
     <div class="article-footer">

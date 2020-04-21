@@ -2,7 +2,7 @@ baseURL: https://masterenlu.github.io/blogSite/
 languageCode: en-us
 title: masteren的填坑之旅
 theme: pure
-# publishDir: docs
+publishDir: docs
 defaultContentLanguage: zh  # en/zh/...
 footnoteReturnLinkContents: ↩
 hasCJKLanguage: true
