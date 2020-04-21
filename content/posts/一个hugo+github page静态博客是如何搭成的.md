@@ -16,7 +16,7 @@ draft: false
 
 于是我想起了被遗忘的博客，然后测试了一下还能不能用，然后就有了下面的情况
 
-![image-20200420185908446](/img/一个hugo+github pages静态博客是如何搭成的/image-20200420185908446.png)
+![image-20200420185908446](https://masterenlu.github.io/blogSite/img/image-20200420185908446.png)
 
 进博客看了看自己仅有的两篇博~~shui~~客~~wen~~，决定从头开始搭一个新的博客，顺便把这篇作为新博客的开端，这才有了现在这篇文章。
 
@@ -48,7 +48,7 @@ go的安装直接按照[官方文档](https://golang.org/doc/install)走，下�
 
 执行 <code>hugo -D</code> 来部署静态网页，之后 <code>hugo server</code> 可以打开本地服务器预览效果。
 
-![image-20200420221834299](https://masterenlu.github.io/blogSite/img/一个hugo+github pages静态博客是如何搭成的/image-20200420221834299.png)
+![image-20200420221834299](https://masterenlu.github.io/blogSite/img/image-20200420221834299.png)
 
 ## 利用github仓库和github pages
 
@@ -82,7 +82,7 @@ publishDir = "docs"
 
 完了之后打开仓库中的 `Settings` 往下找到 `Github Pages`，把 `Source` 一项改成 `master branch /docs floder`
 
-![image-20200420225945814](https://masterenlu.github.io/blogSite/img/一个hugo+github pages静态博客是如何搭成的/image-20200420225945814.png)
+![image-20200420225945814](https://masterenlu.github.io/blogSite/img/image-20200420225945814.png)
 
 <img src="https://masterenlu.github.io/blogSite/img/一个hugo+github pages静态博客是如何搭成的/image-20200420225945814.png" alt="image-20200420255945814" style="zoom: 33%;" />
 
