@@ -136,7 +136,7 @@ params:
     gitalk: # gitalk. https://gitalk.github.io/
       owner: masterenlu #必须. GitHub repository 所有者，可以是个人或者组织。
       admin: masterenlu #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
-      repo:  https://github.com/masterenlu/blogSite.git #必须. GitHub repository.
+      repo:  blogSite #必须. GitHub repository.
       ClientID: 309baa6c832ef5efe449 #必须. GitHub Application Client ID.
       ClientSecret: a76235be660016976d58a835cac77e3fb8dff763 #必须. GitHub Application Client Secret.
     valine: # Valine. https://valine.js.org
