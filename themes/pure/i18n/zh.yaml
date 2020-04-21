@@ -2,9 +2,9 @@
 nav_all:
   other: All
 nav_older:
-  other: 下一篇
-nav_newer:
   other: 上一篇
+nav_newer:
+  other: 下一篇
 
 
 page_home:

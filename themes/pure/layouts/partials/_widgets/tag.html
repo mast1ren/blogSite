@@ -1,5 +1,5 @@
 <div class="widget">
-    <h3 class="widget-title"> {{ T "widget_tags" }}</h3>
+    <h3 class="widget-title"><a href="{{ "tags" | relLangURL }}">标签</a></h3>
     <div class="widget-body">
         <ul class="tag-list">
             {{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
