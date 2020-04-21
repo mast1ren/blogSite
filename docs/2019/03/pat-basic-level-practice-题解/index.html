@@ -30,7 +30,8 @@
   
   <link rel="stylesheet" href="https://masterenlu.github.io/blogSite/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
   
-  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
   <meta property="og:title" content="PAT(Basic level)Practice 题解" />
 <meta property="og:description" content="PAT(Basic level)题解 题解已移至CSDN" />
@@ -111,31 +112,26 @@
         <ul class="nav navbar-nav main-nav">
             <li class="menu-item menu-item-home">
                 <a href="/blogSite/">
-                    <i class="icon icon-home-fill"></i>
                   <span class="menu-title">Home</span>
                 </a>
             </li>
             <li class="menu-item menu-item-archives">
                 <a href="/blogSite/posts/">
-                    <i class="icon icon-archives-fill"></i>
                   <span class="menu-title">Archives</span>
                 </a>
             </li>
             <li class="menu-item menu-item-categories">
                 <a href="/blogSite/categories/">
-                    <i class="icon icon-folder"></i>
                   <span class="menu-title">Categories</span>
                 </a>
             </li>
             <li class="menu-item menu-item-tags">
                 <a href="/blogSite/tags/">
-                    <i class="icon icon-tags"></i>
                   <span class="menu-title">Tags</span>
                 </a>
             </li>
             <li class="menu-item menu-item-about">
                 <a href="/blogSite/about/">
-                    <i class="icon icon-cup-fill"></i>
                   <span class="menu-title">About</span>
                 </a>
             </li>
@@ -151,7 +147,7 @@
     <h3 class="widget-title">公告</h3>
     <div class="widget-body">
         <div id="board">
-            <div class="content"><p>可以通过我的邮箱masterenlu@outlook.com来联系我</p>
+            <div class="content"><p>可以通过我的邮箱<a herf = "mailto:masterenlu@outlook.com">masterenlu@outlook.com</a>来联系我</p>
             </div>
         </div>
     </div>
@@ -161,7 +157,7 @@
     <h3 class="widget-title"> 分类</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://masterenlu.github.io/blogSite/categories/%E5%AD%A6%E4%B9%A0/" class="category-list-link">学习</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://masterenlu.github.io/blogSite/categories/%E5%AD%A6%E4%B9%A0/" class="category-list-link">学习</a><span class="category-list-count">1</span></li>
         </ul>
     </div>
 </div>
@@ -172,11 +168,11 @@
             
             
             <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/blog/" class="tag-list-link">blog</a><span
-                    class="tag-list-count">2</span></li>
+                    class="tag-list-count">1</span></li>
             
             
             <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/hugo/" class="tag-list-link">hugo</a><span
-                    class="tag-list-count">2</span></li>
+                    class="tag-list-count">1</span></li>
             
         </ul>
 
@@ -187,16 +183,6 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget-body">
         <ul class="recent-post-list list-unstyled no-thumbnail">
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://masterenlu.github.io/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84%E4%BA%8C/" class="title">一个hugo&#43;github pages静态博客是如何搭成的（二）</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-04-21 13:54:18 &#43;0800 CST" itemprop="datePublished">2020-04-21</time>
-                    </p>
-                </div>
-            </li>
             <li>
                 <div class="item-inner">
                     <p class="item-title">
@@ -235,7 +221,7 @@
 
     
     
-<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+<aside collapse: class="sidebar sidebar-toc collapse in" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
   <div class="slimContent">
     <h4 class="toc-title">文章目录</h4>
     <nav id="toc" class="js-toc toc">
@@ -266,6 +252,12 @@
 </span>
 
 
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/blogSite/2019/03/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/#comments"
             class="article-comment-link">评论</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 18字</span>
@@ -388,6 +380,22 @@
     });
 </script>
 
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '309baa6c832ef5efe449',
+        clientSecret: 'a76235be660016976d58a835cac77e3fb8dff763',
+        repo: 'https:\/\/github.com\/masterenlu\/blogSite.git',
+        owner: 'masterenlu',
+        admin: ['masterenlu'],
+        id: md5(location.pathname),
+        distractionFreeMode: true
+    });
+    gitalk.render('comments');
+</script>
 
   </body>
 </html>

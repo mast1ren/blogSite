@@ -82,7 +82,7 @@ params:
   # customCSS: css/custom.css
 
   menuIcons:
-    enable: true  # 是否启用导航菜单图标
+    enable: false  # 是否启用导航菜单图标
     home: icon-home-fill
     archives: icon-archives-fill
     categories: icon-folder
@@ -120,7 +120,7 @@ params:
       url: avatar.png
     title: masteren的填坑之旅 # 页面title
     favicon: avatar.png
-    board: <p>可以通过我的邮箱masterenlu@outlook.com来联系我</p> # 公告牌
+    board: <p>可以通过我的邮箱<a herf = "mailto:masterenlu@outlook.com">masterenlu@outlook.com</a>来联系我</p> # 公告牌
 
   # Share
   # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
@@ -131,14 +131,14 @@ params:
 
   # Comment
   comment:
-    type:  # type disqus/gitalk/valine 启用哪种评论系统
+    type: gitalk # type disqus/gitalk/valine 启用哪种评论系统
     disqus: your_disqus_name # enter disqus shortname here
     gitalk: # gitalk. https://gitalk.github.io/
-      owner: #必须. GitHub repository 所有者，可以是个人或者组织。
-      admin: #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
-      repo:  #必须. GitHub repository.
-      ClientID: #必须. GitHub Application Client ID.
-      ClientSecret: #必须. GitHub Application Client Secret.
+      owner: masterenlu #必须. GitHub repository 所有者，可以是个人或者组织。
+      admin: masterenlu #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+      repo:  https://github.com/masterenlu/blogSite.git #必须. GitHub repository.
+      ClientID: 309baa6c832ef5efe449 #必须. GitHub Application Client ID.
+      ClientSecret: a76235be660016976d58a835cac77e3fb8dff763 #必须. GitHub Application Client Secret.
     valine: # Valine. https://valine.js.org
       appid: # your leancloud application appid
       appkey: # your leancloud application appkey
@@ -165,7 +165,7 @@ params:
   # PV
   pv:
     busuanzi:
-      enable: false # 不蒜子统计
+      enable: true # 不蒜子统计
     leancloud:
       enable: false # leancloud统计
       app_id: # leancloud <AppID>
