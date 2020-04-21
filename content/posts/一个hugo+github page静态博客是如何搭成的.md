@@ -2,22 +2,20 @@
 title: 一个hugo+github pages静态博客是如何搭成的
 date: 2020-04-20T18:25:03+08:00
 draft: false
+tags: ["blog","hugo"]
+categories: ["学习"]
+series: ["博客搭建", "踩坑"]
 ---
 
 # 一个hugo+github pages静态博客是如何搭成的
 
 ## 写在前面
 
-\begin{quote}
-\text{note}
-**注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记录一下。**
-\end{quote}
-
-region w { warning 示例 
-← warning icon
-} region warning 示例
+------
 
 **注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记录一下。**
+
+------
 
 其实之前也搭过一个静态博客，搭了两次，使用hexo框架。本来是想在博客上写点题解，记录一下自己在刷题和学习过程中遇到的坑和一些生活上面的感想，于是有了Hello-World-again这篇文章~~并不算~~。后来18年寒假进了技术部之后没了压力和方向，在加上本身懒到一种极致~~没有课绝对不会出宿舍门~~，刷题啥的也就慢慢落了下来，后来一直到现在没写过一道题，在原来博客里更新的几篇题解也全都转到了CSDN上，之后就没再管过博客的事情。
 
@@ -87,7 +85,13 @@ publishDir: docs
 publishDir = "docs"
 ```
 
-更改完文件之后重新在本地部署一次，确认有 `docs` 目录了之后 `push` 到仓库里
+更改完文件之后重新在本地部署一次，确认有 `docs` 目录了之后直接一波git三连
+
+```bash
+$ git add .
+$ git commit -m ""
+$ git push -u origin master
+```
 
 完了之后打开仓库中的 `Settings` 往下找到 `Github Pages`，把 `Source` 一项改成 `master branch /docs floder`
 
@@ -96,30 +100,3 @@ publishDir = "docs"
 那么 `public` 文件夹实际上就不再需要了，为了避免麻烦，直接在 `.gitignore` 里加上 `\public` 以在 `push` 的时候不再更新 `public` 文件夹。
 
 接下来要等一段时间，今天就先到这了，溜了，都11丶了，该摸了。
-
-## 遇到的第一个坑
-
-按理说按照上面的步骤建好github pages之后直接访问域名就可以看到网站了，今天早上打开之后发现是这个样子的
-
-![image-20200421093612212](https://masterenlu.github.io/blogSite/img/image-20200421093612212.png)
-
-然后在我一顿操作之后突然就好了，至今不清楚到底是因为啥。
-
-## 插入图片的问题
-
-在写这篇文章的时候，插入了几个图片。由于我不想使用图床，直接把要插入的图片放在 `static` 文件夹里，然后按照官方文档给的格式使用相对路径插入图片。
-
-> By default, the `static/` directory in the site project is used for all **static files** (e.g. stylesheets, JavaScript, images). The static files are served on the site root path (eg. if you have the file `static/image.png` you can access it using `http://{server-url}/image.png`, to include it in a document you can use `![Example image](/image.png) )`.
-
-那么问题来了，使用这种相对路径插入的时候本地是识别不出来的，md文件在 `content\posts` 文件夹，图片在 `static` 文件夹，所以在本地查看的时候需要按照完整的相对路径查看，但是在发布到page上时又要更改过来，很麻烦。
-
-而且使用官方的相对路径，要求**发布的网页必须在 `public` 文件夹里**，`docs` 文件夹不生效，原因未知。
-
-最后还是选择了图床的模式，把仓库当作图床，采用 `url =  baseURL/img/image` 的模式
-
-## 主题的问题
-
-上面提到过需要更改根目录下的配置文件，但是在配置文件内引用的资源文件没有被更改。需要进入主题文件夹内的 `static` 文件夹内更改资源文件为自己想要的，比如更改头像。
-
-
-
