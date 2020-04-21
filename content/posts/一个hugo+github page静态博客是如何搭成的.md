@@ -150,7 +150,11 @@ config:
 
 ![image-20200421162759418](https://masterenlu.github.io/blogSite/static/img/image-20200421162759418.png)
 
- 查了一下是 `Authorization callback URL` 这个选项配置错误了，应该是仓库的git地址
+ 查了一下是 repo 这个选项配置错误了，直接写仓库名称
+
+![image-20200421164035476](https://masterenlu.github.io/blogSite/static/img/image-20200421164035476.png)
+
+成功~
 
 
 
