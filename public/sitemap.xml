@@ -3,31 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2019-03-31T21:25:00+08:00</lastmod>
+    <loc>https://masterenlu.github.io/blogSite/</loc>
+    <lastmod>2020-04-20T18:25:03+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</loc>
-    <lastmod>2019-03-31T21:25:00+08:00</lastmod>
+    <loc>https://masterenlu.github.io/blogSite/posts/</loc>
+    <lastmod>2020-04-20T18:25:03+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2019-03-31T21:25:00+08:00</lastmod>
+    <loc>https://masterenlu.github.io/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/</loc>
+    <lastmod>2020-04-20T18:25:03+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://example.org/posts/hello-world-again/</loc>
+    <loc>https://masterenlu.github.io/blogSite/2019/03/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</loc>
+    <lastmod>2019-03-31T21:25:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/2019/03/hello-world-again/</loc>
     <lastmod>2019-03-27T14:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://masterenlu.github.io/blogSite/categories/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://masterenlu.github.io/blogSite/series/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
 </urlset>

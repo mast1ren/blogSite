@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -57,12 +57,20 @@
   
   
 
-  <body class="main-center" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
     <div class="slimContent">
-      <div class="navbar-header"><div class="search" id="search-form-wrap">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/xiaoheiAh" target="_blank">
+            <img class="img-circle img-rotate" src="https://masterenlu.github.io/blogSite/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">xiaoheiAh</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">author title</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Shanghai, China</small>
+        </div><div class="search" id="search-form-wrap">
     <form class="search-form sidebar-form">
         <div class="input-group">
-            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
             <span class="input-group-btn">
                 <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
                         class="icon icon-search"></i></button>
@@ -72,7 +80,7 @@
             <div class="ins-search-mask"></div>
             <div class="ins-search-container">
                 <div class="ins-input-wrapper">
-                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
                         x-webkit-speech />
                     <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
                         aria-label="Close"><span aria-hidden="true">×</span></button>
@@ -93,19 +101,119 @@
       </div>
       <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
         <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/blogSite/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/blogSite/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/blogSite/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/blogSite/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/blogSite/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
         </ul>
       </nav>
     </div>
   </header>
 
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>enjoy~</p>
+            </div>
+        </div>
+    </div>
+</div>
 
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://masterenlu.github.io/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/" class="title">一个hugo&#43;github pages静态博客是如何搭成的</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-20 18:25:03 &#43;0800 CST" itemprop="datePublished">2020-04-20</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://masterenlu.github.io/blogSite/2019/03/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/" class="title">PAT(Basic level)Practice 题解</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-03-31 21:25:00 &#43;0800 CST" itemprop="datePublished">2019-03-31</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://masterenlu.github.io/blogSite/2019/03/hello-world-again/" class="title">Hello Blog</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-03-27 14:00:00 &#43;0800 CST" itemprop="datePublished">2019-03-27</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
     
 
 <main class="main" role="main">
     <article class="content article article-archives article-type-list" itemscope="">
         <header class="article-header">
             <h1 itemprop="title">Posts</h1>
-            <p class="text-muted">Total 3 articles</p>
+            <p class="text-muted">共 3 篇文章</p>
         </header>
         <div class="article-body">
                         <section class="panel panel-default b-no">
@@ -120,7 +228,7 @@
                             <div id="collapse2020" class="panel-collapse collapse in" role="tabpanel"
                                 aria-labelledby="heading2020">
                                 <div class="panel-body">
-                                    <div class="collection"><a href="https://masterenlu.github.io/blogSite/posts/%E4%B8%80%E4%B8%AAhugo&#43;github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/" class="collection-item" itemprop="url" target="_blank">
+                                    <div class="collection"><a href="https://masterenlu.github.io/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/" class="collection-item" itemprop="url" target="_blank">
     <time datetime="2020-04-20 18:25:03 &#43;0800 CST" itemprop="datePublished" style="margin-right: 5px;">2020-04-20
     </time>一个hugo&#43;github pages静态博客是如何搭成的
 </a>
@@ -137,10 +245,10 @@
                             <div id="collapse2019" class="panel-collapse collapse in" role="tabpanel"
                                 aria-labelledby="heading2019">
                                 <div class="panel-body">
-                                    <div class="collection"><a href="https://masterenlu.github.io/blogSite/posts/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/" class="collection-item" itemprop="url" target="_blank">
+                                    <div class="collection"><a href="https://masterenlu.github.io/blogSite/2019/03/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/" class="collection-item" itemprop="url" target="_blank">
     <time datetime="2019-03-31 21:25:00 &#43;0800 CST" itemprop="datePublished" style="margin-right: 5px;">2019-03-31
     </time>PAT(Basic level)Practice 题解
-</a><a href="https://masterenlu.github.io/blogSite/posts/hello-world-again/" class="collection-item" itemprop="url" target="_blank">
+</a><a href="https://masterenlu.github.io/blogSite/2019/03/hello-world-again/" class="collection-item" itemprop="url" target="_blank">
     <time datetime="2019-03-27 14:00:00 &#43;0800 CST" itemprop="datePublished" style="margin-right: 5px;">2019-03-27
     </time>Hello Blog
 </a>
@@ -148,8 +256,14 @@
         </div>
     </article>
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/masterenlu" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://masterenlu.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
   <div class="copyright">
-    &copy;&lt;nil&gt;  -
+    &copy;2018  -
     2020
     <div class="publishby">
         Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
@@ -157,11 +271,24 @@
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script>
     window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 </script>
-<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script><script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
     hljs.configure({
         tabReplace: '    ', 
         classPrefix: ''     
@@ -176,11 +303,11 @@
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Posts',
-                PAGES: 'Pages',
-                CATEGORIES: 'Categories',
-                TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
             },
             ROOT_URL: 'https:\/\/masterenlu.github.io\/blogSite\/',
             CONTENT_URL: 'https:\/\/masterenlu.github.io\/blogSite\/\/searchindex.json ',

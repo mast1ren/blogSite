@@ -6,7 +6,9 @@ draft: false
 
 # 一个hugo+github pages静态博客是如何搭成的
 
-## 写在前面的话
+## 写在前面
+
+**注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记录一下。**
 
 其实之前也搭过一个静态博客，搭了两次，使用hexo框架。本来是想在博客上写点题解，记录一下自己在刷题和学习过程中遇到的坑和一些生活上面的感想，于是有了Hello-World-again这篇文章~~并不算~~。后来18年寒假进了技术部之后没了压力和方向，在加上本身懒到一种极致~~没有课绝对不会出宿舍门~~，刷题啥的也就慢慢落了下来，后来一直到现在没写过一道题，在原来博客里更新的几篇题解也全都转到了CSDN上，之后就没再管过博客的事情。
 
@@ -14,7 +16,7 @@ draft: false
 
 于是我想起了被遗忘的博客，然后测试了一下还能不能用，然后就有了下面的情况
 
-![image-20200420185908446](/img/一个hugo+github pages静态博客是如何搭成的/image-20200420185908446.png)
+![image-20200420185908446](https://masterenlu.github.io/blogSite/img/一个hugo+github pages静态博客是如何搭成的/image-20200420185908446.png)
 
 进博客看了看自己仅有的两篇博~~shui~~客~~wen~~，决定从头开始搭一个新的博客，顺便把这篇作为新博客的开端，这才有了现在这篇文章。
 
@@ -30,15 +32,23 @@ hugo按照[官方文档](https://gohugo.io/getting-started/installing)走就可�
 
 go的安装直接按照[官方文档](https://golang.org/doc/install)走，下载一个安装包一步到位。
 
-## 网页生成
+安装完成之后如果要验证的话需要重启命令行，使用 `hugo help` 验证hugo的安装，`go` 来验证go的安装
+
+## 选择主题并生成网页
 
 然后创建要部署博客的文件夹，`hugo new site floder` 就可以看到新部署的文件夹。
+
+然后在[官网](https://themes.gohugo.io)上选择一个主题下载下来，解压缩到 `theme` 文件夹内，然后把目录里的配置文件复制到博客根目录。
+
+这里主题配置文件可以是 `toml、yaml` 和 `yml` 三种格式
+
+如果是 `toml` 格式可以直接复制内容到根目录的 `config.toml` 文件中，否则需要复制原配置文件里的内容到主题的配置文件，然后把原配置文件删除。注意配置内容格式，我选择的主题使用的是 `yml` 文件。
 
 在新文件夹内执行 `hugo new posts/bulabula.md` 就可以在文件夹内的 `content/posts` 里看见生成的md文件。
 
 执行 <code>hugo -D</code> 来部署静态网页，之后 <code>hugo server</code> 可以打开本地服务器预览效果。
 
-<img src="/img/一个hugo+github pages静态博客是如何搭成的/image-20200420221834299.png" alt="image-20200420221834299" style="zoom: 33%;" />
+![image-20200420221834299](https://masterenlu.github.io/blogSite/img/一个hugo+github pages静态博客是如何搭成的/image-20200420221834299.png)
 
 ## 利用github仓库和github pages
 
@@ -56,23 +66,25 @@ go的安装直接按照[官方文档](https://golang.org/doc/install)走，下�
 
 第二种和第三种比较接近，当提交更改时需要提交两次，相比之下第一种只需要提交一次就可以。这里按照顺序选择了第一种方法~~并不是懒~~。
 
-第一种方法需要更改 `hugo` 渲染网页的目录，默认是 `public` 目录，需要我们手动将 `config.toml` 中的发布目录更改成 `docs`
+第一种方法需要更改 `hugo` 渲染网页的目录，默认是 `public` 目录，需要我们手动将 `config` 中的发布目录更改成 `docs`
+
+```yml
+publishDir: docs
+```
+
+* 如果是 `toml` 文件格式为
 
 ```toml
 publishDir = "docs"
-```
-
-* 看官方文档好像还需要更改 `config.yaml` 中的内容，但是我没找到这个文件，害
-
-```yaml
-publishDir: docs
 ```
 
 更改完文件之后重新在本地部署一次，确认有 `docs` 目录了之后 `push` 到仓库里
 
 完了之后打开仓库中的 `Settings` 往下找到 `Github Pages`，把 `Source` 一项改成 `master branch /docs floder`
 
-<img src="/img/一个hugo+github pages静态博客是如何搭成的/image-20200420225945814.png" alt="image-20200420255945814" style="zoom: 33%;" />
+![image-20200420225945814](https://masterenlu.github.io/blogSite/img/一个hugo+github pages静态博客是如何搭成的/image-20200420225945814.png)
+
+<img src="https://masterenlu.github.io/blogSite/img/一个hugo+github pages静态博客是如何搭成的/image-20200420225945814.png" alt="image-20200420255945814" style="zoom: 33%;" />
 
 接下来要等一段时间，今天就先到这了，溜了，都11丶了，该摸了。
 
@@ -80,21 +92,17 @@ publishDir: docs
 
 按理说按照上面的步骤建好github pages之后直接访问域名就可以看到网站了，今天早上打开之后发现是这个样子的
 
-<img src="../../static/img/一个hugo+github pages静态博客是如何搭成的/image-20200421093612212.png" alt="image-20200421093612212" style="zoom:33%;" />
+![image-20200421093612212](https://masterenlu.github.io/blogSite/img/一个hugo+github pages静态博客是如何搭成的/image-20200421093612212.png)
 
-然后在我一顿操作之后突然就好了，至今不清楚到底是因为啥
-
-````toml
-baseURL = "https://masterenlu.github.io/blogSite/"
-languageCode = "zh-cn"
-````
-
-我只更改了这两项
+然后在我一顿操作之后突然就好了，至今不清楚到底是因为啥。
 
 ## 插入图片的问题
 
-在写这篇文章的时候，插入了几个图片。由于我不想使用图床，直接把要插入的图片放在 `static` 文件夹里，然后按照官方文档给的格式
+在写这篇文章的时候，插入了几个图片。由于我不想使用图床，直接把要插入的图片放在 `static` 文件夹里，然后按照官方文档给的格式使用相对路径插入图片。
 
 > By default, the `static/` directory in the site project is used for all **static files** (e.g. stylesheets, JavaScript, images). The static files are served on the site root path (eg. if you have the file `static/image.png` you can access it using `http://{server-url}/image.png`, to include it in a document you can use `![Example image](/image.png) )`.
 
-那么问题来了，这种方法插入的时候本地是识别不出来的，所以在本地查看的时候需要按照完整的相对路径查看
+那么问题来了，使用这种相对路径插入的时候本地是识别不出来的，md文件在 `content\posts` 文件夹，图片在 `static` 文件夹，所以在本地查看的时候需要按照完整的相对路径查看，但是在发布到page上时又要更改过来，很麻烦。
+
+而且使用官方的相对路径，要求**发布的网页必须在 `publish` 文件夹里**，`docs` 文件夹不生效，原因未知。
+

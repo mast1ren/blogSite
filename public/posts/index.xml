@@ -2,30 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on masteren的填坑之旅</title>
-    <link>http://example.org/posts/</link>
+    <link>https://masterenlu.github.io/blogSite/posts/</link>
     <description>Recent content in Posts on masteren的填坑之旅</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
-    <lastBuildDate>Sun, 31 Mar 2019 21:25:00 +0800</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Apr 2020 18:25:03 +0800</lastBuildDate>
     
-        <atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://masterenlu.github.io/blogSite/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>一个hugo&#43;github pages静态博客是如何搭成的</title>
+      <link>https://masterenlu.github.io/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/</link>
+      <pubDate>Mon, 20 Apr 2020 18:25:03 +0800</pubDate>
+      
+      <guid>https://masterenlu.github.io/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/</guid>
+      <description>一个hugo+github pages静态博客是如何搭成的 写在前面的话 其实之前也搭过一个静态博客，搭了两次，使用hexo框架。本来是想在博客上</description>
+    </item>
+    
+    <item>
       <title>PAT(Basic level)Practice 题解</title>
-      <link>http://example.org/posts/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</link>
+      <link>https://masterenlu.github.io/blogSite/2019/03/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</link>
       <pubDate>Sun, 31 Mar 2019 21:25:00 +0800</pubDate>
       
-      <guid>http://example.org/posts/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</guid>
+      <guid>https://masterenlu.github.io/blogSite/2019/03/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</guid>
       <description>PAT(Basic level)题解 题解已移至CSDN</description>
     </item>
     
     <item>
       <title>Hello Blog</title>
-      <link>http://example.org/posts/hello-world-again/</link>
+      <link>https://masterenlu.github.io/blogSite/2019/03/hello-world-again/</link>
       <pubDate>Wed, 27 Mar 2019 14:00:00 +0800</pubDate>
       
-      <guid>http://example.org/posts/hello-world-again/</guid>
+      <guid>https://masterenlu.github.io/blogSite/2019/03/hello-world-again/</guid>
       <description></description>
     </item>
     
