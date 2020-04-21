@@ -14,7 +14,7 @@ draft: false
 
 于是我想起了被遗忘的博客，然后测试了一下还能不能用，然后就有了下面的情况
 
-![image-20200420185908446](C:\Users\luqua\AppData\Roaming\Typora\typora-user-images\image-20200420185908446.png)
+![image-20200420185908446](../../static/img/一个hugo+github pages静态博客是如何搭成的/image-20200420185908446.png)
 
 进博客看了看自己仅有的两篇博~~shui~~客~~wen~~，决定从头开始搭一个新的博客，顺便把这篇作为新博客的开端，这才有了现在这篇文章。
 
@@ -38,7 +38,7 @@ go的安装直接按照[官方文档](https://golang.org/doc/install)走，下�
 
 执行 <code>hugo -D</code> 来部署静态网页，之后 <code>hugo server</code> 可以打开本地服务器预览效果。
 
-<img src="C:\Users\luqua\AppData\Roaming\Typora\typora-user-images\image-20200420221834299.png" alt="刚移植完的blog" style="zoom: 33%;" />
+<img src="/img/一个hugo+github pages静态博客是如何搭成的/image-20200420221834299.png" alt="image-20200420221834299" style="zoom: 33%;" />
 
 ## 利用github仓库和github pages
 
@@ -72,7 +72,13 @@ publishDir: docs
 
 完了之后打开仓库中的 `Settings` 往下找到 `Github Pages`，把 `Source` 一项改成 `master branch /docs floder`
 
-<img src="C:\Users\luqua\AppData\Roaming\Typora\typora-user-images\image-20200420225945814.png" alt="image-20200420225945814" style="zoom: 67%;" />
+<img src="/img/一个hugo+github pages静态博客是如何搭成的/image-20200420225945814.png" alt="image-20200420255945814" style="zoom: 33%;" />
 
 接下来要等一段时间，今天就先到这了，溜了，都11丶了，该摸了。
+
+## 遇到的第一个坑
+
+按理说按照上面的步骤建好github pages之后直接访问域名就可以看到网站了，今天早上打开之后发现是这个样子的
+
+<img src="/img/一个hugo+github pages静态博客是如何搭成的/image-20200421093612212.png" alt="image-20200421093612212" style="zoom:33%;" />
 

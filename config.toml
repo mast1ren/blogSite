@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://masterenlu.github.io/blogSite/"
 languageCode = "cn"
 title = "masteren的填坑之旅"
 theme = "pure"
