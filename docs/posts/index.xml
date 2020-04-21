@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on masteren的填坑之旅</title>
-    <link>/posts/</link>
+    <link>https://masterenlu.github.io/blogSite/posts/</link>
     <description>Recent content in Posts on masteren的填坑之旅</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 20 Apr 2020 18:25:03 +0800</lastBuildDate>
     
-        <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://masterenlu.github.io/blogSite/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>一个hugo&#43;github pages静态博客是如何搭成的</title>
-      <link>/posts/%E4%B8%80%E4%B8%AAhugo&#43;github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/</link>
+      <link>https://masterenlu.github.io/blogSite/posts/%E4%B8%80%E4%B8%AAhugo&#43;github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/</link>
       <pubDate>Mon, 20 Apr 2020 18:25:03 +0800</pubDate>
       
-      <guid>/posts/%E4%B8%80%E4%B8%AAhugo&#43;github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/</guid>
+      <guid>https://masterenlu.github.io/blogSite/posts/%E4%B8%80%E4%B8%AAhugo&#43;github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/</guid>
       <description>一个hugo+github pages静态博客是如何搭成的 写在前面的话 其实之前也搭过一个静态博客，搭了两次，使用hexo框架。本来是想在博客上写点题解，记录一下自己在刷题和学习过程中遇到的坑和一些生活上面的感想，于是有了Hello-World-again这篇文章并不算。后来18年寒假进了技术部之后没了压力和方向，在加上本身懒到一种极致没有课绝对不会出宿舍门，刷题啥的也就慢慢落了下来，后来一直到现在没写过一道题，在原来博客里更新的几篇题解也全都转到了CSDN上，之后就没再管过博客的事情。
 直到昨天，想用github上的一个项目开发一个东西，想了想用qt写了个图形界面，然后在实现功能过程中疯狂吃瘪，甚至一些之前踩过的坑都全忘了，又踩了一遍。于是我痛定思痛，决定以后及时更新博客，把自己踩过的坑全记下来防止再踩一遍。
 于是我想起了被遗忘的博客，然后测试了一下还能不能用，然后就有了下面的情况
@@ -38,19 +38,19 @@ Deployment of Project Pages from Your master Branch</description>
     
     <item>
       <title>PAT(Basic level)Practice 题解</title>
-      <link>/posts/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</link>
+      <link>https://masterenlu.github.io/blogSite/posts/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</link>
       <pubDate>Sun, 31 Mar 2019 21:25:00 +0800</pubDate>
       
-      <guid>/posts/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</guid>
+      <guid>https://masterenlu.github.io/blogSite/posts/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</guid>
       <description>PAT(Basic level)题解 题解已移至CSDN</description>
     </item>
     
     <item>
       <title>Hello Blog</title>
-      <link>/posts/hello-world-again/</link>
+      <link>https://masterenlu.github.io/blogSite/posts/hello-world-again/</link>
       <pubDate>Wed, 27 Mar 2019 14:00:00 +0800</pubDate>
       
-      <guid>/posts/hello-world-again/</guid>
+      <guid>https://masterenlu.github.io/blogSite/posts/hello-world-again/</guid>
       <description></description>
     </item>
     

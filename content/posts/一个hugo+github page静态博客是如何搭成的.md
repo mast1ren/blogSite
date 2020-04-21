@@ -80,5 +80,21 @@ publishDir: docs
 
 按理说按照上面的步骤建好github pages之后直接访问域名就可以看到网站了，今天早上打开之后发现是这个样子的
 
-<img src="/img/一个hugo+github pages静态博客是如何搭成的/image-20200421093612212.png" alt="image-20200421093612212" style="zoom:33%;" />
+<img src="../../static/img/一个hugo+github pages静态博客是如何搭成的/image-20200421093612212.png" alt="image-20200421093612212" style="zoom:33%;" />
 
+然后在我一顿操作之后突然就好了，至今不清楚到底是因为啥
+
+````toml
+baseURL = "https://masterenlu.github.io/blogSite/"
+languageCode = "zh-cn"
+````
+
+我只更改了这两项
+
+## 插入图片的问题
+
+在写这篇文章的时候，插入了几个图片。由于我不想使用图床，直接把要插入的图片放在 `static` 文件夹里，然后按照官方文档给的格式
+
+> By default, the `static/` directory in the site project is used for all **static files** (e.g. stylesheets, JavaScript, images). The static files are served on the site root path (eg. if you have the file `static/image.png` you can access it using `http://{server-url}/image.png`, to include it in a document you can use `![Example image](/image.png) )`.
+
+那么问题来了，这种方法插入的时候本地是识别不出来的，所以在本地查看的时候需要按照完整的相对路径查看
