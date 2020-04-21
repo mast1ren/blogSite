@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        一个hugo&#43;github pages静态博客是如何搭成的 - masteren的填坑之旅
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面的话 其实之前也搭过一个静态博客，搭了两次，使用hexo框架。本来是想在博客上写点题解，记录一下自己在刷题和学习过程中遇到的坑和一些生活上面的感想，于是有了Hello-World-again这篇文章并不算。后来18年寒假进了技术部之后没了压力和方向，在加上本身懒到一种极致没有课绝对不会出宿舍门，刷题啥的也就慢慢落了下来，后来一直到现在没写过一道题，在原来博客里更新的几篇题解也全都转到了CSDN上，之后就没再管过博客的事情。
+直到昨天，想用github上的一个项目开发一个东西，想了想用qt写了个图形界面，然后在实现功能过程中疯狂吃瘪，甚至一些之前踩过的坑都全忘了，又踩了一遍。于是我痛定思痛，决定以后及时更新博客，把自己踩过的坑全记下来防止再踩一遍。
+于是我想起了被遗忘的博客，然后测试了一下还能不能用，然后就有了下面的情况
+![image-20200420185908446](/img/一个hugo&#43;github pages静态博客是如何搭成的/image-20200420185908446.png)
+进博客看了看自己仅有的两篇博shui客wen，决定从头开始搭一个新的博客，顺便把这篇作为新博客的开端，这才有了现在这篇文章。
+关于hugo 为什么不再使用hexo作为新博客的框架了呢？一是因为hugo使用的go语言以后可能会学，现在整一下环境完事。第二个就是感觉我跟hexo水土不服（并不），这次换一个试试。
+hugo与go的安装 hugo按照官方文档走就可以。
+这里我看到最后才发现可以不下载chocolatey工具，直接下载hugo开源的发布版，解压缩后把添加hugo/bin到path环境变量就行了。
+go的安装直接按照官方文档走，下载一个安装包一步到位。
+网页生成 然后创建要部署博客的文件夹，hugo new site floder 就可以看到新部署的文件夹。
+在新文件夹内执行 hugo new posts/bulabula.md 就可以在文件夹内的 content/posts 里看见生成的md文件。
+执行 hugo -D来部署静态网页，之后 hugo server可以打开本地服务器预览效果。
+利用github仓库和github pages 首先需要在github上新建一个没有 readme 和 lisence 的空仓库，把博客的文件夹初始化并 push 到仓库中
+这个时候按照官方文档来走，官方给了三个选择：
+ Deployment of Project Pages from /docs folder on master branch
+Deployment of Project Pages From Your gh-pages branch
+Deployment of Project Pages from Your master Branch" />
+  <meta name="generator" content="Hugo 0.69.0 with theme pure" />
+  <title>一个hugo&#43;github pages静态博客是如何搭成的 - masteren的填坑之旅</title>
+  
+  
+  <link rel="stylesheet" href="https://masterenlu.github.io/blogSite/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="一个hugo&#43;github pages静态博客是如何搭成的" />
+<meta property="og:description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面的话 其实之前也搭过一个静态博客，搭了两次，使用hexo框架。本来是想在博客上写点题解，记录一下自己在刷题和学习过程中遇到的坑和一些生活上面的感想，于是有了Hello-World-again这篇文章并不算。后来18年寒假进了技术部之后没了压力和方向，在加上本身懒到一种极致没有课绝对不会出宿舍门，刷题啥的也就慢慢落了下来，后来一直到现在没写过一道题，在原来博客里更新的几篇题解也全都转到了CSDN上，之后就没再管过博客的事情。
+直到昨天，想用github上的一个项目开发一个东西，想了想用qt写了个图形界面，然后在实现功能过程中疯狂吃瘪，甚至一些之前踩过的坑都全忘了，又踩了一遍。于是我痛定思痛，决定以后及时更新博客，把自己踩过的坑全记下来防止再踩一遍。
+于是我想起了被遗忘的博客，然后测试了一下还能不能用，然后就有了下面的情况
+![image-20200420185908446](/img/一个hugo&#43;github pages静态博客是如何搭成的/image-20200420185908446.png)
+进博客看了看自己仅有的两篇博shui客wen，决定从头开始搭一个新的博客，顺便把这篇作为新博客的开端，这才有了现在这篇文章。
+关于hugo 为什么不再使用hexo作为新博客的框架了呢？一是因为hugo使用的go语言以后可能会学，现在整一下环境完事。第二个就是感觉我跟hexo水土不服（并不），这次换一个试试。
+hugo与go的安装 hugo按照官方文档走就可以。
+这里我看到最后才发现可以不下载chocolatey工具，直接下载hugo开源的发布版，解压缩后把添加hugo/bin到path环境变量就行了。
+go的安装直接按照官方文档走，下载一个安装包一步到位。
+网页生成 然后创建要部署博客的文件夹，hugo new site floder 就可以看到新部署的文件夹。
+在新文件夹内执行 hugo new posts/bulabula.md 就可以在文件夹内的 content/posts 里看见生成的md文件。
+执行 hugo -D来部署静态网页，之后 hugo server可以打开本地服务器预览效果。
+利用github仓库和github pages 首先需要在github上新建一个没有 readme 和 lisence 的空仓库，把博客的文件夹初始化并 push 到仓库中
+这个时候按照官方文档来走，官方给了三个选择：
+ Deployment of Project Pages from /docs folder on master branch
+Deployment of Project Pages From Your gh-pages branch
+Deployment of Project Pages from Your master Branch" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://masterenlu.github.io/blogSite/posts/%E4%B8%80%E4%B8%AAhugo&#43;github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/" />
+<meta property="article:published_time" content="2020-04-20T18:25:03+08:00" />
+<meta property="article:modified_time" content="2020-04-20T18:25:03+08:00" />
+<meta itemprop="name" content="一个hugo&#43;github pages静态博客是如何搭成的">
+<meta itemprop="description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面的话 其实之前也搭过一个静态博客，搭了两次，使用hexo框架。本来是想在博客上写点题解，记录一下自己在刷题和学习过程中遇到的坑和一些生活上面的感想，于是有了Hello-World-again这篇文章并不算。后来18年寒假进了技术部之后没了压力和方向，在加上本身懒到一种极致没有课绝对不会出宿舍门，刷题啥的也就慢慢落了下来，后来一直到现在没写过一道题，在原来博客里更新的几篇题解也全都转到了CSDN上，之后就没再管过博客的事情。
+直到昨天，想用github上的一个项目开发一个东西，想了想用qt写了个图形界面，然后在实现功能过程中疯狂吃瘪，甚至一些之前踩过的坑都全忘了，又踩了一遍。于是我痛定思痛，决定以后及时更新博客，把自己踩过的坑全记下来防止再踩一遍。
+于是我想起了被遗忘的博客，然后测试了一下还能不能用，然后就有了下面的情况
+![image-20200420185908446](/img/一个hugo&#43;github pages静态博客是如何搭成的/image-20200420185908446.png)
+进博客看了看自己仅有的两篇博shui客wen，决定从头开始搭一个新的博客，顺便把这篇作为新博客的开端，这才有了现在这篇文章。
+关于hugo 为什么不再使用hexo作为新博客的框架了呢？一是因为hugo使用的go语言以后可能会学，现在整一下环境完事。第二个就是感觉我跟hexo水土不服（并不），这次换一个试试。
+hugo与go的安装 hugo按照官方文档走就可以。
+这里我看到最后才发现可以不下载chocolatey工具，直接下载hugo开源的发布版，解压缩后把添加hugo/bin到path环境变量就行了。
+go的安装直接按照官方文档走，下载一个安装包一步到位。
+网页生成 然后创建要部署博客的文件夹，hugo new site floder 就可以看到新部署的文件夹。
+在新文件夹内执行 hugo new posts/bulabula.md 就可以在文件夹内的 content/posts 里看见生成的md文件。
+执行 hugo -D来部署静态网页，之后 hugo server可以打开本地服务器预览效果。
+利用github仓库和github pages 首先需要在github上新建一个没有 readme 和 lisence 的空仓库，把博客的文件夹初始化并 push 到仓库中
+这个时候按照官方文档来走，官方给了三个选择：
+ Deployment of Project Pages from /docs folder on master branch
+Deployment of Project Pages From Your gh-pages branch
+Deployment of Project Pages from Your master Branch">
+<meta itemprop="datePublished" content="2020-04-20T18:25:03&#43;08:00" />
+<meta itemprop="dateModified" content="2020-04-20T18:25:03&#43;08:00" />
+<meta itemprop="wordCount" content="113">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="一个hugo&#43;github pages静态博客是如何搭成的"/>
+<meta name="twitter:description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面的话 其实之前也搭过一个静态博客，搭了两次，使用hexo框架。本来是想在博客上写点题解，记录一下自己在刷题和学习过程中遇到的坑和一些生活上面的感想，于是有了Hello-World-again这篇文章并不算。后来18年寒假进了技术部之后没了压力和方向，在加上本身懒到一种极致没有课绝对不会出宿舍门，刷题啥的也就慢慢落了下来，后来一直到现在没写过一道题，在原来博客里更新的几篇题解也全都转到了CSDN上，之后就没再管过博客的事情。
+直到昨天，想用github上的一个项目开发一个东西，想了想用qt写了个图形界面，然后在实现功能过程中疯狂吃瘪，甚至一些之前踩过的坑都全忘了，又踩了一遍。于是我痛定思痛，决定以后及时更新博客，把自己踩过的坑全记下来防止再踩一遍。
+于是我想起了被遗忘的博客，然后测试了一下还能不能用，然后就有了下面的情况
+![image-20200420185908446](/img/一个hugo&#43;github pages静态博客是如何搭成的/image-20200420185908446.png)
+进博客看了看自己仅有的两篇博shui客wen，决定从头开始搭一个新的博客，顺便把这篇作为新博客的开端，这才有了现在这篇文章。
+关于hugo 为什么不再使用hexo作为新博客的框架了呢？一是因为hugo使用的go语言以后可能会学，现在整一下环境完事。第二个就是感觉我跟hexo水土不服（并不），这次换一个试试。
+hugo与go的安装 hugo按照官方文档走就可以。
+这里我看到最后才发现可以不下载chocolatey工具，直接下载hugo开源的发布版，解压缩后把添加hugo/bin到path环境变量就行了。
+go的安装直接按照官方文档走，下载一个安装包一步到位。
+网页生成 然后创建要部署博客的文件夹，hugo new site floder 就可以看到新部署的文件夹。
+在新文件夹内执行 hugo new posts/bulabula.md 就可以在文件夹内的 content/posts 里看见生成的md文件。
+执行 hugo -D来部署静态网页，之后 hugo server可以打开本地服务器预览效果。
+利用github仓库和github pages 首先需要在github上新建一个没有 readme 和 lisence 的空仓库，把博客的文件夹初始化并 push 到仓库中
+这个时候按照官方文档来走，官方给了三个选择：
+ Deployment of Project Pages from /docs folder on master branch
+Deployment of Project Pages From Your gh-pages branch
+Deployment of Project Pages from Your master Branch"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header"><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+    
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/blogSite/posts/%E4%B8%80%E4%B8%AAhugo&#43;github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/"
+    >一个hugo&#43;github pages静态博客是如何搭成的</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://masterenlu.github.io/blogSite/posts/%E4%B8%80%E4%B8%AAhugo&#43;github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/" class="article-date">
+  <time datetime="2020-04-20 18:25:03 &#43;0800 CST" itemprop="datePublished">2020-04-20</time>
+</a>
+</span>
+
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/blogSite/posts/%E4%B8%80%E4%B8%AAhugo&#43;github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/#comments"
+            class="article-comment-link">Comments</a></span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h1 id="一个hugogithub-pages静态博客是如何搭成的">一个hugo+github pages静态博客是如何搭成的</h1>
+<h2 id="写在前面的话">写在前面的话</h2>
+<p>其实之前也搭过一个静态博客，搭了两次，使用hexo框架。本来是想在博客上写点题解，记录一下自己在刷题和学习过程中遇到的坑和一些生活上面的感想，于是有了Hello-World-again这篇文章<del>并不算</del>。后来18年寒假进了技术部之后没了压力和方向，在加上本身懒到一种极致<del>没有课绝对不会出宿舍门</del>，刷题啥的也就慢慢落了下来，后来一直到现在没写过一道题，在原来博客里更新的几篇题解也全都转到了CSDN上，之后就没再管过博客的事情。</p>
+<p>直到昨天，想用github上的一个项目开发一个东西，想了想用qt写了个图形界面，然后在实现功能过程中疯狂吃瘪，甚至一些之前踩过的坑都全忘了，又踩了一遍。于是我痛定思痛，决定以后及时更新博客，把自己踩过的坑全记下来防止再踩一遍。</p>
+<p>于是我想起了被遗忘的博客，然后测试了一下还能不能用，然后就有了下面的情况</p>
+<p>![image-20200420185908446](/img/一个hugo+github pages静态博客是如何搭成的/image-20200420185908446.png)</p>
+<p>进博客看了看自己仅有的两篇博<del>shui</del>客<del>wen</del>，决定从头开始搭一个新的博客，顺便把这篇作为新博客的开端，这才有了现在这篇文章。</p>
+<h2 id="关于hugo">关于hugo</h2>
+<p>为什么不再使用hexo作为新博客的框架了呢？一是因为hugo使用的go语言以后可能会学，现在整一下环境完事。第二个就是感觉我跟hexo水土不服（并不），这次换一个试试。</p>
+<h2 id="hugo与go的安装">hugo与go的安装</h2>
+<p>hugo按照<a href="https://gohugo.io/getting-started/installing">官方文档</a>走就可以。</p>
+<p>这里我看到最后才发现可以不下载chocolatey工具，直接下载hugo开源的发布版，解压缩后把添加<!-- raw HTML omitted -->hugo/bin<!-- raw HTML omitted -->到<!-- raw HTML omitted -->path<!-- raw HTML omitted -->环境变量就行了。</p>
+<p>go的安装直接按照<a href="https://golang.org/doc/install">官方文档</a>走，下载一个安装包一步到位。</p>
+<h2 id="网页生成">网页生成</h2>
+<p>然后创建要部署博客的文件夹，<code>hugo new site floder</code> 就可以看到新部署的文件夹。</p>
+<p>在新文件夹内执行 <code>hugo new posts/bulabula.md</code> 就可以在文件夹内的 <code>content/posts</code> 里看见生成的md文件。</p>
+<p>执行 <!-- raw HTML omitted -->hugo -D<!-- raw HTML omitted --> 来部署静态网页，之后 <!-- raw HTML omitted -->hugo server<!-- raw HTML omitted --> 可以打开本地服务器预览效果。</p>
+<p><!-- raw HTML omitted --></p>
+<h2 id="利用github仓库和github-pages">利用github仓库和github pages</h2>
+<p>首先需要在github上新建一个没有 <code>readme</code> 和 <code>lisence</code> 的空仓库，把博客的文件夹初始化并 <code>push</code> 到仓库中</p>
+<p>这个时候按照<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">官方文档</a>来走，官方给了三个选择：</p>
+<blockquote>
+<p><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-of-project-pages-from-docs-folder-on-master-branch">Deployment of Project Pages from <code>/docs</code> folder on <code>master</code> branch</a></p>
+<p><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-of-project-pages-from-your-gh-pages-branch">Deployment of Project Pages From Your <code>gh-pages</code> branch</a></p>
+<p><a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-of-project-pages-from-your-master-branch">Deployment of Project Pages from Your <code>master</code> Branch</a></p>
+</blockquote>
+<p>第一个将在 <code>master</code> 分支下的 <code>/docs</code> 子文件夹部署网站，第二个是新建 <code>gh-pages</code> 分支来部署网站，第三个就是使用新仓库来部署网站。</p>
+<p>第二种和第三种比较接近，当提交更改时需要提交两次，相比之下第一种只需要提交一次就可以。这里按照顺序选择了第一种方法<del>并不是懒</del>。</p>
+<p>第一种方法需要更改 <code>hugo</code> 渲染网页的目录，默认是 <code>public</code> 目录，需要我们手动将 <code>config.toml</code> 中的发布目录更改成 <code>docs</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">publishDir</span> = <span style="color:#e6db74">&#34;docs&#34;</span>
+</code></pre></div><ul>
+<li>看官方文档好像还需要更改 <code>config.yaml</code> 中的内容，但是我没找到这个文件，害</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">publishDir</span>: docs
+</code></pre></div><p>更改完文件之后重新在本地部署一次，确认有 <code>docs</code> 目录了之后 <code>push</code> 到仓库里</p>
+<p>完了之后打开仓库中的 <code>Settings</code> 往下找到 <code>Github Pages</code>，把 <code>Source</code> 一项改成 <code>master branch /docs floder</code></p>
+<p><!-- raw HTML omitted --></p>
+<p>接下来要等一段时间，今天就先到这了，溜了，都11丶了，该摸了。</p>
+<h2 id="遇到的第一个坑">遇到的第一个坑</h2>
+<p>按理说按照上面的步骤建好github pages之后直接访问域名就可以看到网站了，今天早上打开之后发现是这个样子的</p>
+<p><!-- raw HTML omitted --></p>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://masterenlu.github.io/blogSite/posts/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/" title="PAT(Basic level)Practice 题解"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            
+        </ul>
+        <div class="bar-right">
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+  <div class="copyright">
+    &copy;&lt;nil&gt;  -
+    2020
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://masterenlu.github.io/blogSite/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://masterenlu.github.io/blogSite/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/masterenlu.github.io\/blogSite\/',
+            CONTENT_URL: 'https:\/\/masterenlu.github.io\/blogSite\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://masterenlu.github.io/blogSite/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>
