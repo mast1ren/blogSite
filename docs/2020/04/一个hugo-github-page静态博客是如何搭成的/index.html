@@ -23,7 +23,7 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面 注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记录一" />
+  <meta name="description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面 \begin{quote} \text{note} 注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记" />
   <meta name="generator" content="Hugo 0.69.0 with theme pure" />
   <title>一个hugo&#43;github pages静态博客是如何搭成的 - masteren的填坑之旅</title>
   
@@ -33,22 +33,22 @@
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
   <meta property="og:title" content="一个hugo&#43;github pages静态博客是如何搭成的" />
-<meta property="og:description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面 注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记录一" />
+<meta property="og:description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面 \begin{quote} \text{note} 注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://masterenlu.github.io/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/" />
 <meta property="article:published_time" content="2020-04-20T18:25:03+08:00" />
 <meta property="article:modified_time" content="2020-04-20T18:25:03+08:00" />
 <meta itemprop="name" content="一个hugo&#43;github pages静态博客是如何搭成的">
-<meta itemprop="description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面 注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记录一">
+<meta itemprop="description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面 \begin{quote} \text{note} 注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记">
 <meta itemprop="datePublished" content="2020-04-20T18:25:03&#43;08:00" />
 <meta itemprop="dateModified" content="2020-04-20T18:25:03&#43;08:00" />
-<meta itemprop="wordCount" content="1847">
+<meta itemprop="wordCount" content="1961">
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="一个hugo&#43;github pages静态博客是如何搭成的"/>
-<meta name="twitter:description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面 注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记录一"/>
+<meta name="twitter:description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面 \begin{quote} \text{note} 注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -249,13 +249,20 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1847字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1961字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
       <h1 id="一个hugogithub-pages静态博客是如何搭成的">一个hugo+github pages静态博客是如何搭成的</h1>
 <h2 id="写在前面">写在前面</h2>
+<p>\begin{quote}
+\text{note}
+<strong>注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记录一下。</strong>
+\end{quote}</p>
+<p>region w { warning 示例 
+← warning icon
+} region warning 示例</p>
 <p><strong>注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记录一下。</strong></p>
 <p>其实之前也搭过一个静态博客，搭了两次，使用hexo框架。本来是想在博客上写点题解，记录一下自己在刷题和学习过程中遇到的坑和一些生活上面的感想，于是有了Hello-World-again这篇文章<del>并不算</del>。后来18年寒假进了技术部之后没了压力和方向，在加上本身懒到一种极致<del>没有课绝对不会出宿舍门</del>，刷题啥的也就慢慢落了下来，后来一直到现在没写过一道题，在原来博客里更新的几篇题解也全都转到了CSDN上，之后就没再管过博客的事情。</p>
 <p>直到昨天，想用github上的一个项目开发一个东西，想了想用qt写了个图形界面，然后在实现功能过程中疯狂吃瘪，甚至一些之前踩过的坑都全忘了，又踩了一遍。于是我痛定思痛，决定以后及时更新博客，把自己踩过的坑全记下来防止再踩一遍。</p>
@@ -270,7 +277,7 @@
 <p>go的安装直接按照<a href="https://golang.org/doc/install">官方文档</a>走，下载一个安装包一步到位。</p>
 <p>安装完成之后如果要验证的话需要重启命令行，使用 <code>hugo help</code> 验证hugo的安装，<code>go</code> 来验证go的安装</p>
 <h2 id="选择主题并生成网页">选择主题并生成网页</h2>
-<p>然后创建要部署博客的文件夹，<code>hugo new site floder</code> 就可以看到新部署的文件夹。</p>
+<p>然后创建要部署博客的文件夹，<code>hugo new site floderName</code> 就可以看到新部署的文件夹。</p>
 <p>然后在<a href="https://themes.gohugo.io">官网</a>上选择一个主题下载下来，解压缩到 <code>theme</code> 文件夹内，然后把目录里的配置文件复制到博客根目录。</p>
 <p>这里主题配置文件可以是 <code>toml、yaml</code> 和 <code>yml</code> 三种格式</p>
 <p>如果是 <code>toml</code> 格式可以直接复制内容到根目录的 <code>config.toml</code> 文件中，否则需要复制原配置文件里的内容到主题的配置文件，然后把原配置文件删除。注意配置内容格式，我选择的主题使用的是 <code>yml</code> 文件。</p>
@@ -311,7 +318,7 @@
 <p>而且使用官方的相对路径，要求<strong>发布的网页必须在 <code>public</code> 文件夹里</strong>，<code>docs</code> 文件夹不生效，原因未知。</p>
 <p>最后还是选择了图床的模式，把仓库当作图床，采用 <code>url =  baseURL/img/image</code> 的模式</p>
 <h2 id="主题的问题">主题的问题</h2>
-<p>上面提到过需要更改根目录下的配置文件，</p>
+<p>上面提到过需要更改根目录下的配置文件，但是在配置文件内引用的资源文件没有被更改。需要进入主题文件夹内的 <code>static</code> 文件夹内更改资源文件为自己想要的，比如更改头像。</p>
 
     </div>
     <div class="article-footer">
