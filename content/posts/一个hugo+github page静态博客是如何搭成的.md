@@ -84,7 +84,7 @@ publishDir = "docs"
 
 ![image-20200420225945814](https://masterenlu.github.io/blogSite/img/image-20200420225945814.png)
 
-<img src="https://masterenlu.github.io/blogSite/img/一个hugo+github pages静态博客是如何搭成的/image-20200420225945814.png" alt="image-20200420255945814" style="zoom: 33%;" />
+那么 `public` 文件夹实际上就不再需要了，为了避免麻烦，直接在 `.gitignore` 里加上 `\public` 以在 `push` 的时候不再更新 `public` 文件夹。
 
 接下来要等一段时间，今天就先到这了，溜了，都11丶了，该摸了。
 
@@ -110,7 +110,7 @@ publishDir = "docs"
 
 ## 主题的问题
 
-上面提到过需要
+上面提到过需要更改根目录下的配置文件，
 
 
 

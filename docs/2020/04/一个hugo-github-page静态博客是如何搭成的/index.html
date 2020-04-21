@@ -42,7 +42,7 @@
 <meta itemprop="description" content="一个hugo&#43;github pages静态博客是如何搭成的 写在前面 注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记录一">
 <meta itemprop="datePublished" content="2020-04-20T18:25:03&#43;08:00" />
 <meta itemprop="dateModified" content="2020-04-20T18:25:03&#43;08:00" />
-<meta itemprop="wordCount" content="1748">
+<meta itemprop="wordCount" content="1847">
 
 
 
@@ -249,7 +249,7 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1748字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1847字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4分 </span>
       </div>
     </div>
@@ -296,7 +296,7 @@
 </code></pre></div><p>更改完文件之后重新在本地部署一次，确认有 <code>docs</code> 目录了之后 <code>push</code> 到仓库里</p>
 <p>完了之后打开仓库中的 <code>Settings</code> 往下找到 <code>Github Pages</code>，把 <code>Source</code> 一项改成 <code>master branch /docs floder</code></p>
 <p><img src="https://masterenlu.github.io/blogSite/img/image-20200420225945814.png" alt="image-20200420225945814"></p>
-<p><!-- raw HTML omitted --></p>
+<p>那么 <code>public</code> 文件夹实际上就不再需要了，为了避免麻烦，直接在 <code>.gitignore</code> 里加上 <code>\public</code> 以在 <code>push</code> 的时候不再更新 <code>public</code> 文件夹。</p>
 <p>接下来要等一段时间，今天就先到这了，溜了，都11丶了，该摸了。</p>
 <h2 id="遇到的第一个坑">遇到的第一个坑</h2>
 <p>按理说按照上面的步骤建好github pages之后直接访问域名就可以看到网站了，今天早上打开之后发现是这个样子的</p>
@@ -309,6 +309,9 @@
 </blockquote>
 <p>那么问题来了，使用这种相对路径插入的时候本地是识别不出来的，md文件在 <code>content\posts</code> 文件夹，图片在 <code>static</code> 文件夹，所以在本地查看的时候需要按照完整的相对路径查看，但是在发布到page上时又要更改过来，很麻烦。</p>
 <p>而且使用官方的相对路径，要求<strong>发布的网页必须在 <code>public</code> 文件夹里</strong>，<code>docs</code> 文件夹不生效，原因未知。</p>
+<p>最后还是选择了图床的模式，把仓库当作图床，采用 <code>url =  baseURL/img/image</code> 的模式</p>
+<h2 id="主题的问题">主题的问题</h2>
+<p>上面提到过需要更改根目录下的配置文件，</p>
 
     </div>
     <div class="article-footer">
