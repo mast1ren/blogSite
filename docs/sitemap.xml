@@ -3,15 +3,92 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://masterenlu.github.io/blogSite/about/about/</loc>
-    <lastmod>2020-04-21T15:54:58+08:00</lastmod>
+    <loc>https://masterenlu.github.io/blogSite/categories/</loc>
+    <lastmod>2020-04-22T09:42:49+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://masterenlu.github.io/blogSite/about/</loc>
-    <lastmod>2020-04-21T15:54:58+08:00</lastmod>
+    <loc>https://masterenlu.github.io/blogSite/</loc>
+    <lastmod>2020-04-22T09:42:49+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/posts/</loc>
+    <lastmod>2020-04-22T09:42:49+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/series/</loc>
+    <lastmod>2020-04-22T09:42:49+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/</loc>
+    <lastmod>2020-04-22T09:42:49+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/terminal/</loc>
+    <lastmod>2020-04-22T09:42:49+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/windows/</loc>
+    <lastmod>2020-04-22T09:42:49+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/2020/04/windowsterminal%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2020-04-22T09:42:49+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/windows-terminal/</loc>
+    <lastmod>2020-04-22T09:42:49+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2020-04-22T09:42:49+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/series/%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2020-04-22T09:42:49+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/%E6%B3%A8%E5%86%8C%E8%A1%A8/</loc>
+    <lastmod>2020-04-22T09:42:49+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/series/%E8%B8%A9%E5%9D%91/</loc>
+    <lastmod>2020-04-22T09:42:49+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -24,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://masterenlu.github.io/blogSite/categories/</loc>
+    <loc>https://masterenlu.github.io/blogSite/tags/html/</loc>
     <lastmod>2020-04-20T18:25:03+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -32,27 +109,6 @@
   
   <url>
     <loc>https://masterenlu.github.io/blogSite/tags/hugo/</loc>
-    <lastmod>2020-04-20T18:25:03+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://masterenlu.github.io/blogSite/posts/</loc>
-    <lastmod>2020-04-20T18:25:03+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://masterenlu.github.io/blogSite/series/</loc>
-    <lastmod>2020-04-20T18:25:03+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://masterenlu.github.io/blogSite/tags/</loc>
     <lastmod>2020-04-20T18:25:03+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -73,34 +129,6 @@
   </url>
   
   <url>
-    <loc>https://masterenlu.github.io/blogSite/categories/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2020-04-20T18:25:03+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://masterenlu.github.io/blogSite/series/%E8%B8%A9%E5%9D%91/</loc>
-    <lastmod>2020-04-20T18:25:03+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://masterenlu.github.io/blogSite/about/</loc>
-    <lastmod>2019-04-20T15:54:58+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://masterenlu.github.io/blogSite/</loc>
-    <lastmod>2019-04-20T15:54:58+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://masterenlu.github.io/blogSite/2019/03/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</loc>
     <lastmod>2019-03-31T21:25:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -110,6 +138,20 @@
   <url>
     <loc>https://masterenlu.github.io/blogSite/2019/03/hello-world-again/</loc>
     <lastmod>2019-03-27T14:00:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/about/about/</loc>
+    <lastmod>2019-03-21T15:54:58+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/about/</loc>
+    <lastmod>2019-03-21T15:54:58+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
