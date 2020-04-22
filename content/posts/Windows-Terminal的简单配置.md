@@ -8,8 +8,6 @@ series: ["踩坑","工具配置"]
 description: "Windows Terminal的安装和右键菜单配置"
 ---
 
-# Windows Terminal的简单配置
-
 ## 前言
 
 由于电脑里的命令行有丶多~~其实就三个~~，就想着有没有一个工具能够集合一下，正好巨硬的 Windows Terminal 现在正在预览阶段，所以就直接用上了。
