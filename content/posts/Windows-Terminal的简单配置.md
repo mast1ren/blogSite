@@ -104,7 +104,7 @@ Windows Terminal是微软官方开发并开源一个终端应用
 
 首先打开注册表编辑器，找到路径 `计算机\HKEY_CLASSES_ROOT\Directory\Background\shell`，新建一个 `wt` 项，更改默认值数据为 `Windows Terminal here` 或者其他想在右键菜单里显示的内容，然后新建一个 `command` 项，将其默认值数据更改为 `C:\Users\your_username\AppData\Local\Microsoft\WindowsApps\wt.exe`
 
-> ⚠注意：使用debug版本编译出来的应用程序是 `wtd.exe`
+> ⚠ 注意：使用debug版本编译出来的应用程序是 `wtd.exe`
 
 这个时候右键菜单里就出现了 `Windows Terminal here` 选项，如果想要按住 `shift` 点击右键出现的话需要在 `wt` 里新建一个**字符串值**，将其命名为 `Extended`。如果想要在选项旁边增加一个图标，需要在 `wt` 里新建一个可扩充字符串值 `Icon` ，将数据为 `你想要的图标的路径`
 
