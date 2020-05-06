@@ -1,7 +1,7 @@
 ---
 title: "Windows Terminal的简单配置"
 date: 2020-04-22T09:42:49+08:00
-draft: true
+draft: false
 tags: ["Windows-Terminal","注册表","Windows","terminal"]
 categories: ["找乐子"]
 series: ["踩坑","工具配置"]

@@ -6,10 +6,19 @@
     <description>Recent content in 工具配置 on masteren的填坑之旅</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2020 09:42:49 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2020 11:17:47 +0800</lastBuildDate>
     
         <atom:link href="https://masterenlu.github.io/blogSite/series/%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>记录一件比较坑的事</title>
+      <link>https://masterenlu.github.io/blogSite/2020/05/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BB%B6%E6%AF%94%E8%BE%83%E5%9D%91%E7%9A%84%E4%BA%8B/</link>
+      <pubDate>Wed, 06 May 2020 11:17:47 +0800</pubDate>
+      
+      <guid>https://masterenlu.github.io/blogSite/2020/05/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BB%B6%E6%AF%94%E8%BE%83%E5%9D%91%E7%9A%84%E4%BA%8B/</guid>
+      <description>之前为了图个方便，把课程表导入到了 outlook 里面，于是把 outlook 桌面端给安装了。 然后就在前两天，突然发现 win10 自带的日历中有两个 outlook 邮箱，于是我把其中一个给删了</description>
+    </item>
     
     <item>
       <title>Windows Terminal的简单配置</title>
