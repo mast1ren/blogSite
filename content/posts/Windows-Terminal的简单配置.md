@@ -3,7 +3,7 @@ title: "Windows Terminal的简单配置"
 date: 2020-04-22T09:42:49+08:00
 draft: true
 tags: ["Windows-Terminal","注册表","Windows","terminal"]
-categories: ["学习"]
+categories: ["找乐子"]
 series: ["踩坑","工具配置"]
 description: "Windows Terminal的安装和右键菜单配置"
 ---
@@ -97,6 +97,9 @@ Windows Terminal是微软官方开发并开源一个终端应用
 > Not currently supported "out of the box". See issue [#1060](https://github.com/microsoft/terminal/issues/1060)
 
 但是我们可以通过更改注册表来实现这个右键菜单功能
+
+> 2020 5 6
+> 现在可以在 Github 上看一看 kerol2r20 大佬的  [Windows-terminal-context-menu](https://github.com/kerol2r20/Windows-terminal-context-menu) 项目
 
 ### 用户模式
 

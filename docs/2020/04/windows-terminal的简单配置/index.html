@@ -45,7 +45,7 @@
 <meta itemprop="description" content="Windows Terminal的安装和右键菜单配置">
 <meta itemprop="datePublished" content="2020-04-22T09:42:49&#43;08:00" />
 <meta itemprop="dateModified" content="2020-04-22T09:42:49&#43;08:00" />
-<meta itemprop="wordCount" content="2232">
+<meta itemprop="wordCount" content="2252">
 
 
 
@@ -149,7 +149,7 @@
     <h3 class="widget-title"> <a href="/blogSite/categories">分类</a></h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://masterenlu.github.io/blogSite/categories/%E5%AD%A6%E4%B9%A0/" class="category-list-link">学习</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://masterenlu.github.io/blogSite/categories/%E6%89%BE%E4%B9%90%E5%AD%90/" class="category-list-link">找乐子</a><span class="category-list-count">2</span></li>
         </ul>
     </div>
 </div>
@@ -284,7 +284,7 @@
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/blogSite/categories/%E5%AD%A6%E4%B9%A0/"> 学习 </a>
+  <a class="article-category-link" href="/blogSite/categories/%E6%89%BE%E4%B9%90%E5%AD%90/"> 找乐子 </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
@@ -302,7 +302,7 @@
 	</span>
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/blogSite/2020/04/windows-terminal%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2232字</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2252字</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5分 </span>
       </div>
     </div>
@@ -376,6 +376,10 @@ The Terminal will also need to meet our goals and measures to ensure it remains 
 <p>Not currently supported &ldquo;out of the box&rdquo;. See issue <a href="https://github.com/microsoft/terminal/issues/1060">#1060</a></p>
 </blockquote>
 <p>但是我们可以通过更改注册表来实现这个右键菜单功能</p>
+<blockquote>
+<p>2020 5 6
+现在可以在 Github 上看一看 kerol2r20 大佬的  <a href="https://github.com/kerol2r20/Windows-terminal-context-menu">Windows-terminal-context-menu</a> 项目</p>
+</blockquote>
 <h3 id="用户模式">用户模式</h3>
 <p>首先打开注册表编辑器，找到路径 <code>计算机\HKEY_CLASSES_ROOT\Directory\Background\shell</code>，新建一个 <code>wt</code> 项，更改默认值数据为 <code>Windows Terminal here</code> 或者其他想在右键菜单里显示的内容，然后新建一个 <code>command</code> 项，将其默认值数据更改为 <code>C:\Users\your_username\AppData\Local\Microsoft\WindowsApps\wt.exe</code></p>
 <blockquote>

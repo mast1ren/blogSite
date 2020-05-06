@@ -3,7 +3,7 @@ title: 一个hugo+github pages静态博客是如何搭成的
 date: 2020-04-20T18:25:03+08:00
 draft: false
 tags: ["blog","hugo","html"]
-categories: ["学习"]
+categories: ["找乐子"]
 series: ["博客搭建", "踩坑"]
 description: "注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记录一下。"
 ---
