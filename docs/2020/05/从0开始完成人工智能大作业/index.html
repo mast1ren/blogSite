@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        从零开始完成人工智能大作业 - masteren的填坑之旅
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="从零开始完成人工智能大作业" />
+  <meta name="generator" content="Hugo 0.69.0 with theme pure" />
+  <title>从零开始完成人工智能大作业 - masteren的填坑之旅</title>
+  
+  
+  <link rel="stylesheet" href="https://masterenlu.github.io/blogSite/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="从零开始完成人工智能大作业" />
+<meta property="og:description" content="从零开始完成人工智能大作业" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://masterenlu.github.io/blogSite/2020/05/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%AE%8C%E6%88%90%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E4%BD%9C%E4%B8%9A/" />
+<meta property="article:published_time" content="2020-05-18T12:53:32+08:00" />
+<meta property="article:modified_time" content="2020-05-18T12:53:32+08:00" /><meta property="og:see_also" content="https://masterenlu.github.io/blogSite/2020/05/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BB%B6%E6%AF%94%E8%BE%83%E5%9D%91%E7%9A%84%E4%BA%8B/" /><meta property="og:see_also" content="https://masterenlu.github.io/blogSite/2020/04/windows-terminal%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/" /><meta property="og:see_also" content="https://masterenlu.github.io/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/" />
+
+
+<meta itemprop="name" content="从零开始完成人工智能大作业">
+<meta itemprop="description" content="从零开始完成人工智能大作业">
+<meta itemprop="datePublished" content="2020-05-18T12:53:32&#43;08:00" />
+<meta itemprop="dateModified" content="2020-05-18T12:53:32&#43;08:00" />
+<meta itemprop="wordCount" content="3208">
+
+
+
+<meta itemprop="keywords" content="CNN,ResNet,图像分类,PyTorch," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="从零开始完成人工智能大作业"/>
+<meta name="twitter:description" content="从零开始完成人工智能大作业"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/masterenlu" target="_blank">
+            <img class="img-circle img-rotate" src="https://masterenlu.github.io/blogSite/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">masteren</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">从不摸鱼</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/blogSite/">
+                  <span class="menu-title">主页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/blogSite/posts/">
+                  <span class="menu-title">归档</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/blogSite/about/about">
+                  <span class="menu-title">留言板&amp;关于</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>左下角的球形链接其实是我的tg</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> <a href="/blogSite/categories">分类</a></h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://masterenlu.github.io/blogSite/categories/%E6%89%BE%E4%B9%90%E5%AD%90/" class="category-list-link">找乐子</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://masterenlu.github.io/blogSite/categories/%E6%97%A5%E5%B8%B8/" class="category-list-link">日常</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://masterenlu.github.io/blogSite/categories/%E6%AD%A3%E7%BB%8F%E4%BA%8B/" class="category-list-link">正经事</a><span class="category-list-count">1</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"><a href="/blogSite/tags">标签</a></h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/blog/" class="tag-list-link">blog</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/cnn/" class="tag-list-link">cnn</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/html/" class="tag-list-link">html</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/hugo/" class="tag-list-link">hugo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/outlook/" class="tag-list-link">outlook</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/pytorch/" class="tag-list-link">pytorch</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/resnet/" class="tag-list-link">resnet</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/terminal/" class="tag-list-link">terminal</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/windows/" class="tag-list-link">windows</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/windows-terminal/" class="tag-list-link">windows-terminal</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/" class="tag-list-link">图像分类</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/%E6%B3%A8%E5%86%8C%E8%A1%A8/" class="tag-list-link">注册表</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://masterenlu.github.io/blogSite/tags/%E9%82%AE%E7%AE%B1/" class="tag-list-link">邮箱</a><span
+                    class="tag-list-count">1</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://masterenlu.github.io/blogSite/2020/05/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%AE%8C%E6%88%90%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E4%BD%9C%E4%B8%9A/" class="title">从零开始完成人工智能大作业</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-18 12:53:32 &#43;0800 CST" itemprop="datePublished">2020-05-18</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://masterenlu.github.io/blogSite/2020/05/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BB%B6%E6%AF%94%E8%BE%83%E5%9D%91%E7%9A%84%E4%BA%8B/" class="title">记录一件比较坑的事</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-06 11:17:47 &#43;0800 CST" itemprop="datePublished">2020-05-06</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://masterenlu.github.io/blogSite/2020/04/windows-terminal%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/" class="title">Windows Terminal的简单配置</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-22 09:42:49 &#43;0800 CST" itemprop="datePublished">2020-04-22</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://masterenlu.github.io/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/" class="title">一个hugo&#43;github pages静态博客是如何搭成的</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-04-20 18:25:03 &#43;0800 CST" itemprop="datePublished">2020-04-20</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://masterenlu.github.io/blogSite/2019/03/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/" class="title">PAT(Basic level)Practice 题解</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-03-31 21:25:00 &#43;0800 CST" itemprop="datePublished">2019-03-31</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/blogSite/2020/05/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%AE%8C%E6%88%90%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E4%BD%9C%E4%B8%9A/"
+    >从零开始完成人工智能大作业</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://masterenlu.github.io/blogSite/2020/05/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%AE%8C%E6%88%90%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E4%BD%9C%E4%B8%9A/" class="article-date">
+  <time datetime="2020-05-18 12:53:32 &#43;0800 CST" itemprop="datePublished">2020-05-18</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/blogSite/categories/%E6%AD%A3%E7%BB%8F%E4%BA%8B/"> 正经事 </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/blogSite/tags/cnn/"> CNN </a>
+    <a class="article-tag-link" href="/blogSite/tags/resnet/"> ResNet </a>
+    <a class="article-tag-link" href="/blogSite/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/"> 图像分类 </a>
+    <a class="article-tag-link" href="/blogSite/tags/pytorch/"> PyTorch </a>
+  </span>
+
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/blogSite/2020/05/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%AE%8C%E6%88%90%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E4%BD%9C%E4%B8%9A/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 3208字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 7分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="写在前面">写在前面</h2>
+<p>2020年5月6日，最后一节人工智能课上，老师宣布将期末考试改成大作业的形式（其实之前就说过，但是具体是哪天我忘了），要求使用 cnn 网络和 pytorch 框架完成布置的几项任务之一。</p>
+<p>直到这一天，我们才真正了解人工智能导论的真正含义，不是入门，而是自己动手写实际项目。没办法，零基础的我只能选择一个最简单的图片分类来做一做，这篇文章也是记录一下，如果以后有需要的话还可以参考一下。</p>
+<h2 id="关于-cnn">关于 CNN</h2>
+<p>首先要做的就是了解需要用到的框架和网络。</p>
+<p>要求使用 cnn 网络来完成任务，但是之前上课只讲过神经元网络（nn）,所以这里顺手就打开了一个<a href="https://zh.wikipedia.org/wiki/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C">维基百科</a></p>
+<blockquote>
+<p><strong>卷积神经网络</strong>（Convolutional Neural Network, <strong>CNN</strong>）是一种<a href="https://zh.wikipedia.org/wiki/%E5%89%8D%E9%A6%88%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C">前馈神经网络</a>，它的人工神经元可以响应一部分覆盖范围内的周围单元，[<a href="https://zh.wikipedia.org/wiki/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C#cite_note-deeplearning-1">1]</a>对于大型图像处理有出色表现。</p>
+<p>卷积神经网络由一个或多个卷积层和顶端的全连通层（对应经典的神经网络）组成，同时也包括关联权重和池化层（pooling layer）。这一结构使得卷积神经网络能够利用输入数据的二维结构。与其他深度学习结构相比，卷积神经网络在图像和<a href="https://zh.wikipedia.org/wiki/%E8%AF%AD%E9%9F%B3%E8%AF%86%E5%88%AB">语音识别</a>方面能够给出更好的结果。这一模型也可以使用<a href="https://zh.wikipedia.org/wiki/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95">反向传播算法</a>进行训练。相比较其他深度、前馈神经网络，卷积神经网络需要考量的参数更少，使之成为一种颇具吸引力的深度学习结构[<a href="https://zh.wikipedia.org/wiki/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C#cite_note-STANCNN-2">2]</a>。</p>
+</blockquote>
+<p>简单来说就是一个使用卷积运算来处理数据的神经网络。包括卷积层、池化层和全连接层。</p>
+<p>在每个卷积层上都会有一个或多个卷积核（$kernel$）来对二维化的数据进行扫描和卷积运算。在池化层上会对卷积后的数据进行压缩。最后就是普通神经元网络的全连接层。</p>
+<p>在卷积操作时，卷积核会对 $kernel_size$ 内的数据每 $stride$ 一次进行卷积运算。但是这样每次运算图片都会变小，为了避免这种情况，引入了 $padding$，即在原数据周围加上 $padding$ 层的 $0$ 数据。</p>
+<p>网上关于 CNN 的介绍有很多，这里不再废话，有条件的可以看看<a href="https://morvanzhou.github.io/tutorials/machine-learning/torch/4-01-A-CNN/">什么是卷积神经网络 CNN (Convolutional Neural Network)</a></p>
+<h2 id="数据集准备">数据集准备</h2>
+<p>这里国内交通标识分类数据集比较少，我这里在 <a href="http://www.nlpr.ia.ac.cn/pal/trafficdata/recognition.html">Chinese Traffic Sign Database</a> 上找到了一个数据集，可惜的是数据集比较小，供训练的图片只有 4k+ 张，而且分布不均匀，58 个分类，有些分类只有几十张训练图。只能后期进行数据增强了。</p>
+<p>下载下来数据集和标记文件，为了方便，我将标记文件的格式改成了</p>
+<pre><code>path/fileName class
+</code></pre>
+<p>的格式。</p>
+<p>从 <code>torch.utils.data</code> 导入 <code>Dataset</code>，根据<a href="https://pytorch.org/docs/stable/data.html">官方文档</a>，可以自定义的数据集有两种，<code>map-style datasets</code> 和 <code>iterable-style datasets</code>，这里选择了第一种，然后创建继承自 <code>Dataset</code> 的数据集类，创建的数据集应该包括三个方法：</p>
+<pre><code class="language-python">class trafficDataset(Dataset):
+    def __init__(self, label_file_path, train=True):
+    def __getitem__(self, index):
+    def __len__(self):
+</code></pre>
+<p>在初始化方法中，需要读取图片和其分类，只需读取标识文件中的图片路径和分类即可</p>
+<pre><code class="language-python">def __init__(self, label_file_path, train=True):
+    f = open(label_file_path, 'r')
+    self.data = list(map(lambda line: line.strip().split(' '), f)) # 读取文件和分类
+    self.train = train # 标记是否用于训练
+</code></pre>
+<p>在 <code>__getitem__</code> 方法中，需要根据给的下标来读取选择的数据，这里由于之前载入的 <code>data</code> 是图片路径和分类，所以 <code>path, label = self.data[index]</code>，然后根据是否用于训练对图像分别处理。这里的图片处理和数据增强需要用到 <code>torchvision</code> 中的 <code>transforms</code> 和 <code>PIL</code> 中的 <code>Image</code>。</p>
+<pre><code class="language-python">if self.train:
+    # 训练集执行数据增强
+    img = transforms.Compose([transforms.Resize((256, 256)), # 统一尺寸
+                              transforms.RandomRotation([-30, 30]), # 在-30度到30度之间随机旋转
+                              transforms.RandomGrayscale(0.3), # 以0.3的概率将图片转为灰度
+                              transforms.ColorJitter(brightness=0.5, contrast=0.5), # 随机改变图片的亮度饱和度
+                              transforms.ToTensor(), # 将图片转为 Tensor 格式
+                              transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225)) # 图片归一化 
+                             ])(Image.open(path).convert('RGB'))
+else:
+    # 测试集不执行
+    img = transforms.Compose([transforms.Resize((256, 256)),
+                              transforms.ToTensor(),
+                              transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))
+                             ])(Image.open(path).convert('RGB'))
+</code></pre>
+<p>然后将获得的 <code>img</code> 和 <code>lable</code> 作为返回值。</p>
+<p><code>__len__</code> 方法为获取数据集长度。</p>
+<h2 id="使用-pytorch-构建自己的-cnn-网络">使用 pytorch 构建自己的 CNN 网络</h2>
+<p>构建数据集之后就是关键的 CNN 网络的构建，由于同样是图形分类，这里网络的构建可以参考网上一些经典的 CNN 网络，比如 LeNet-5 网络。</p>
+<p>要构建神经元网络，首先导入 <code>torch</code> 中的 <code>nn</code>，然后继承 <code>nn.Module</code> 构建自己的神经元网络类，应该包含两个方法</p>
+<pre><code class="language-python">class cnn(nn.Module):
+    def __init__(self): # 初始化
+        super(cnn, self).__init__()
+	def forward(self, x): # 正向传播
+</code></pre>
+<p>按照上面说的三个层次，在初始化方法中依次添加卷积层、池化层和全连接层。LeNet-5 网络除了这三个之外还包括一个激活层。</p>
+<pre><code class="language-python">class cnn(nn.Module):
+    def __init__(self):
+        super(cnn, self).__init__()
+		self.conv1 = nn.Conv2d(in_channels=3, # 卷积层
+                               out_channels=16,
+                               kernel_size=5,
+                               stride=1,
+                               padding=2) 
+        self.relu = nn.ReLU(inplace=True) # 激活层
+        self.maxpool = nn.MaxPool2d(kernel_size=2) # 池化层
+        self.fc = nn.Liner(16*128*128, 58) # 全连接层
+	def forward(self, x):
+        x = self.conv1(x)
+        x = self.relu(x)
+        x = self.maxpool(x)
+        x = x.reshape(x.size(0), -1)
+        x = self.fc(x)
+        return x
+</code></pre>
+<p>一个简单的 LeNet-5 网络就搭建完成了。在这个网络里只进行了一次卷积，实际上需要用到的卷积层可能更多，可以根据不同需求来添加。</p>
+<p>同时为避免过拟合通常也会添加 <code>dropout</code> 等，需要注意的是 <code>BN</code> 和 <code>dropout</code> 一般不并用，似乎是会导致方差偏移。</p>
+<p>有关于卷积层的输入和输出尺寸问题，这里有一个公式，假设一些变量 $$H_i, W_i, D_i, H_o, W_o, D_o$$ 分别为输入时的长宽深和输出时的长宽深，$$C_i, C_o, K, S, P$$ 分别为卷积层的五个参数。</p>
+<p>有：
+$$
+H_o = \left\lfloor\frac{H_i-K+2P}{S}\right\rfloor+1 \<br>
+W_o = \left\lfloor\frac{W_i-K+2P}{S}\right\rfloor+1 \<br>
+D_o = \left\lfloor\frac{D_i-K+2P}{S}\right\rfloor+1
+$$
+池化层使用同一个公式。</p>
+<h2 id="训练部分">训练部分</h2>
+<p>在数据集和神经网络都搭建完成之后，就可以开始训练自己的模型了。</p>
+<p>开始之前需要创建数据集对象</p>
+<pre><code class="language-python">full_data = trafficDataset(label_file_path='./Train/label_train.txt', train=True) # 指定训练集和验证集的数据
+train_size = int(0.9 * len(full_data)) 
+vali_size = len(full_data) - train_size
+# 将训练集的一部分拿出来用做验证
+train_data, vali_data = torch.utils.data.random_split(full_data, [train_size, vali_size])
+
+train_loader = DataLoader(train_data, batch_size=16, shuffle=True) # 每16个一批进行训练，顺序随机
+vali_loader = DataLoader(vali_data, batch_size=16, shuffle=True)
+</code></pre>
+<blockquote>
+<p>如果需要使用 GPU 进行训练，需要指定模型对象和数据使用的设备</p>
+<pre><code class="language-python">device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+model = cnn().to(device)
+</code></pre>
+</blockquote>
+<p>然后指定用于后向传播的 <code>loss</code> 方法、优化器、学习率和 <code>epoch</code> 等数据。</p>
+<pre><code class="language-python">EPOCH = 50
+LEARNING_RATE = 0.001 # 学习率
+loss_func = nn.CrossEntropyLoss() # 交叉熵
+optimizer = torch.optim.AdamW(model.parameters(), lr=LEARNING_RATE, amsgrad=False, weight_decay=0.0005)
+</code></pre>
+<blockquote>
+<p>如果需要按 <code>epoch</code> 设置动态学习率，可以使用 <code>torch.optim.lr_scheduler</code> 中的方法来设置衰减率，然后在每个 <code>epoch</code> 结束后进行 <code>scheduler.step()</code> 来改变学习率。</p>
+<p>⚠ <code>scheduler</code> 是 <code>torch.optim.lr_scheduler.bulabula</code> 的对象</p>
+</blockquote>
+<p>然后就可以开始训练了</p>
+<pre><code class="language-python">for epoch in range(EPOCH):
+    torch.cuda.empty_cache()
+    for step, (images, labels) in enumerate(train_loader):
+        images = images.to(device) # 将数据送到指定设备
+        labels = labels.to(device)
+
+        outputs = model(images) # 获取预测值
+        loss = loss_func(outputs, labels) # 获取交叉熵
+
+        optimizer.zero_grad() # 梯度归零
+        loss.backward() # 反向传播
+        optimizer.step() # 梯度更新
+        # 每20次训练输出一次
+        if step % 20 == 0:
+            print('Epoch [{}/{}], Step [{}/{}], Loss: {:.7f}'.format(epoch + 1, EPOCH, step + 1, total_step,
+                                                                         loss.item()))
+</code></pre>
+<p>可以使用类似测试的方法可以在每个 <code>epoch</code> 后对验证集进行一次验证。</p>
+<p>训练结束之后可以使用 <code>torch.save(model.state_dict(), 'model.pt')</code> 来将训练好的模型保存到本地，以便测试。</p>
+<h2 id="测试部分">测试部分</h2>
+<p>如果有保存的模型，先使用创建一个模型对象，并且使用 <code>model.load_state_dict(torch.load('model.pt'))</code> 来加载之前保存的模型。</p>
+<p>需要注意的是，在正式开始测试之前，要使用 <code>model.eval()</code> 先将模型对象的模式改成评估。</p>
+<pre><code class="language-python">for images, labels in test_loader:
+    images, labels = images.to(device), labels.to(device)
+    with torch.no_grad():
+        outputs = model(images) # 获取预测
+        maxk = max((1, 5))
+        labels_resize = labels.view(-1, 1)
+        _, predicted = outputs.topk(maxk, 1, True, True) # 获取可能性最大的5个类别
+        correct += torch.eq(predicted, labels_resize).sum().item()
+        total += labels.size(0)
+</code></pre>
+<p>这里采用 top-5 的预测方式来预测类别。</p>
+<h2 id="第一个模型">第一个模型</h2>
+<p>第一个模型用了4个卷积层、激活层、池化层和一个全连接层，没有数据增强。在学习率 0.01 的情况下使用 Adam 优化器跑了 50 个 epoch，结果并不理想，大概只有50左右的正确率。</p>
+<p>在后面对训练集进行数据增强后，正确率提高到 80 以上，但是似乎 f1 分数不高，这可把我这个没经验的👶👶急坏了。</p>
+<p>于是，在多方咨询和舍友建议下，我将我的 CNN 网络改为了 ResNet。</p>
+<h2 id="什么是-resnet">什么是 ResNet</h2>
+<p>深度残差网络（Deep residual network, ResNet）是由何凯明团队在2015年提出的一种卷积神经网络。其使用残差学习的方式来解决深层网络退化的问题。</p>
+<p><img src="https://masterenlu.github.io/blogSite/img/%E6%AE%8B%E5%B7%AE%E5%AD%A6%E4%B9%A0.png" alt="残差学习单元"></p>
+<p>将输入 $x$ 的特征记为 $H(x)$，那么对于这个 $x$， 残差为 $F(x)=H(x)-x$，那么这个特征就是 $H(x)=F(x)+x$。</p>
+<p>ResNet 参考并修改了 VGG19 的网络结构，加入了残差单元。</p>
+<p>具体在<a href="https://arxiv.org/abs/1512.03385">论文</a>里可以看~~（懒得写了~~。</p>
+<h2 id="resnet-网络的搭建">ResNet 网络的搭建</h2>
+<h3 id="pytorch-官方实现">pytorch 官方实现</h3>
+<p>在 pytorch 官方库里有 ResNet 的实现代码，我们可以参照一下，源码在 <a href="https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py">Github</a> 上可以找到。</p>
+<h3 id="自定义搭建">自定义搭建</h3>
+<p>这里主要是 copy 的官方的代码，由于只用到了 resnet50，所以残差块就只设置了一个，参数也取消掉了。</p>
+<h2 id="第二个模型">第二个模型</h2>
+<p>在改为 ResNet 网络之后，0.001 学习率用 adamw 跑了 15 个epoch，结果如图</p>
+<p><img src="https://masterenlu.github.io/blogSite/img/%E6%A8%A1%E5%9E%8B%E4%BA%8C%E5%88%86%E6%95%B0.png" alt="模型二分数"></p>
+<p>![模型二loss](<a href="https://masterenlu.github.io/blogSite/img/">https://masterenlu.github.io/blogSite/img/</a>模型二 loss.png)</p>
+<p>测试集准确率可以到92，但是这个 loss 波动有点夸张，于是我将学习率改成 0.01，跑了 50 个 epoch，结果如图</p>
+<p>![AdamW 分数](<a href="https://masterenlu.github.io/blogSite/img/AdamW">https://masterenlu.github.io/blogSite/img/AdamW</a> Score.png)</p>
+<p>![SGD 分数](<a href="https://masterenlu.github.io/blogSite/img/SGD">https://masterenlu.github.io/blogSite/img/SGD</a> Score.png)</p>
+<p>感觉还是可以的，至少作为我第一个 AI 模型来说，应该算是比较成功了。</p>
+<h2 id="结尾">结尾</h2>
+<p>真正的从零开始做一个东西，总共算下来大概花了两个周末来完成这个模型，期间狂听 Aimer，已经沉迷于这个甜美的旅人。</p>
+<p>从的来说感觉还是挺不错的，好歹学到了一些东西~~（指狂听 Aimer~~，比在家闲着摸鱼强。</p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li>
+      <strong>原创内容，转载请注明出处</strong>
+    </li>
+    <li class="post-copyright-link ">
+      <strong>本文链接: </strong>
+      <a href="https://masterenlu.github.io/blogSite/2020/05/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%AE%8C%E6%88%90%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E4%BD%9C%E4%B8%9A/" title="从零开始完成人工智能大作业" target="_blank" rel="external">https://masterenlu.github.io/blogSite/2020/05/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E5%AE%8C%E6%88%90%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E4%BD%9C%E4%B8%9A/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by-sa/2.5/deed.zh" target="_blank" rel="external">CC BY-SA 2.5</a>
+    </li>
+  </ul>
+</blockquote>
+
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://masterenlu.github.io/blogSite/2020/05/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BB%B6%E6%AF%94%E8%BE%83%E5%9D%91%E7%9A%84%E4%BA%8B/" title="记录一件比较坑的事"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="true"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/masterenlu" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://masterenlu.github.io/blogSite/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+    <li><a href="https://t.me/masterenlu" target="_blank" title="social-media" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-social-media"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2018  -
+    2020
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://masterenlu.github.io/blogSite/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://masterenlu.github.io/blogSite/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: 'https:\/\/masterenlu.github.io\/blogSite\/',
+            CONTENT_URL: 'https:\/\/masterenlu.github.io\/blogSite\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://masterenlu.github.io/blogSite/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '309baa6c832ef5efe449',
+        clientSecret: 'a76235be660016976d58a835cac77e3fb8dff763',
+        repo: 'blogSite',
+        owner: 'masterenlu',
+        admin: ['masterenlu'],
+        id: md5(location.pathname),
+        distractionFreeMode: true
+    });
+    gitalk.render('comments');
+</script>
+
+  </body>
+</html>

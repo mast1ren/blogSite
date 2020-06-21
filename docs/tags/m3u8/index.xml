@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>m3u8 on masteren的填坑之旅</title>
+    <link>https://masterenlu.github.io/blogSite/tags/m3u8/</link>
+    <description>Recent content in m3u8 on masteren的填坑之旅</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Jun 2020 14:53:17 +0800</lastBuildDate>
+    
+        <atom:link href="https://masterenlu.github.io/blogSite/tags/m3u8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fiddler &#43; N_m3u8DL-CLI 下载钉钉直播录像</title>
+      <link>https://masterenlu.github.io/blogSite/2020/06/fiddler-n_m3u8dl-cli-%E4%B8%8B%E8%BD%BD%E9%92%89%E9%92%89%E7%9B%B4%E6%92%AD%E5%BD%95%E5%83%8F/</link>
+      <pubDate>Sun, 21 Jun 2020 14:53:17 +0800</pubDate>
+      
+      <guid>https://masterenlu.github.io/blogSite/2020/06/fiddler-n_m3u8dl-cli-%E4%B8%8B%E8%BD%BD%E9%92%89%E9%92%89%E7%9B%B4%E6%92%AD%E5%BD%95%E5%83%8F/</guid>
+      <description>前言 最近在准备最优化的考试，需要反复看钉钉上的直播录像，但是钉钉自带的播放器功能实在太拉胯了，老师又不给开放下载权限，只能采取这种抓包的方式</description>
+    </item>
+    
+    <item>
+      <title>从零开始完成人工智能大作业</title>
+      <link>https://masterenlu.github.io/blogSite/2020/05/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AE%8C%E6%88%90%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E4%BD%9C%E4%B8%9A/</link>
+      <pubDate>Mon, 18 May 2020 12:53:32 +0800</pubDate>
+      
+      <guid>https://masterenlu.github.io/blogSite/2020/05/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AE%8C%E6%88%90%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E4%BD%9C%E4%B8%9A/</guid>
+      <description>写在前面 2020年5月6日，最后一节人工智能课上，老师宣布将期末考试改成大作业的形式（其实之前就说过，但是具体是哪天我忘了），要求使用 cnn 网络</description>
+    </item>
+    
+    <item>
+      <title>记录一件比较坑的事</title>
+      <link>https://masterenlu.github.io/blogSite/2020/05/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BB%B6%E6%AF%94%E8%BE%83%E5%9D%91%E7%9A%84%E4%BA%8B/</link>
+      <pubDate>Wed, 06 May 2020 11:17:47 +0800</pubDate>
+      
+      <guid>https://masterenlu.github.io/blogSite/2020/05/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BB%B6%E6%AF%94%E8%BE%83%E5%9D%91%E7%9A%84%E4%BA%8B/</guid>
+      <description>之前为了图个方便，把课程表导入到了 outlook 里面，于是把 outlook 桌面端给安装了。 然后就在前两天，突然发现 win10 自带的日历中有两个 outlook 邮箱，于是我把其中一个给删了</description>
+    </item>
+    
+    <item>
+      <title>Windows Terminal的简单配置</title>
+      <link>https://masterenlu.github.io/blogSite/2020/04/windows-terminal%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Wed, 22 Apr 2020 09:42:49 +0800</pubDate>
+      
+      <guid>https://masterenlu.github.io/blogSite/2020/04/windows-terminal%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE/</guid>
+      <description>前言 由于电脑里的命令行有丶多其实就三个，就想着有没有一个工具能够集合一下，正好巨硬的 Windows Terminal 现在正在预览阶段，所以就直接用上了。 ~其实就是闲着没</description>
+    </item>
+    
+    <item>
+      <title>一个hugo&#43;github pages静态博客是如何搭成的</title>
+      <link>https://masterenlu.github.io/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/</link>
+      <pubDate>Mon, 20 Apr 2020 18:25:03 +0800</pubDate>
+      
+      <guid>https://masterenlu.github.io/blogSite/2020/04/%E4%B8%80%E4%B8%AAhugo-github-page%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%98%AF%E5%A6%82%E4%BD%95%E6%90%AD%E6%88%90%E7%9A%84/</guid>
+      <description>写在前面 注意！这篇文章并不是一个教程，只是把我在搭建博客的过程和中间遇到的问题记录一下。 其实之前也搭过一个静态博客，搭了两次，使用hexo框</description>
+    </item>
+    
+    <item>
+      <title>PAT(Basic level)Practice 题解</title>
+      <link>https://masterenlu.github.io/blogSite/2019/03/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</link>
+      <pubDate>Sun, 31 Mar 2019 21:25:00 +0800</pubDate>
+      
+      <guid>https://masterenlu.github.io/blogSite/2019/03/pat-basic-level-practice-%E9%A2%98%E8%A7%A3/</guid>
+      <description>PAT(Basic level)题解 题解已移至CSDN</description>
+    </item>
+    
+    <item>
+      <title>Hello Blog</title>
+      <link>https://masterenlu.github.io/blogSite/2019/03/hello-world-again/</link>
+      <pubDate>Wed, 27 Mar 2019 14:00:00 +0800</pubDate>
+      
+      <guid>https://masterenlu.github.io/blogSite/2019/03/hello-world-again/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://masterenlu.github.io/blogSite/about/about/</link>
+      <pubDate>Thu, 21 Mar 2019 15:54:58 +0800</pubDate>
+      
+      <guid>https://masterenlu.github.io/blogSite/about/about/</guid>
+      <description>关于我 一个普通菜鸡计科学生，小秦粉丝 联系方式 可以在留言板上留言，我在收到留言后会尽快回复。 或者可以选择写邮件给我的邮箱：masterenlu</description>
+    </item>
+    
+  </channel>
+</rss>

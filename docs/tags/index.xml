@@ -6,10 +6,28 @@
     <description>Recent content in Tags on masteren的填坑之旅</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 May 2020 11:17:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 14:53:17 +0800</lastBuildDate>
     
         <atom:link href="https://masterenlu.github.io/blogSite/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fiddler &#43; N_m3u8DL-CLI 下载钉钉直播录像</title>
+      <link>https://masterenlu.github.io/blogSite/2020/06/fiddler-n_m3u8dl-cli-%E4%B8%8B%E8%BD%BD%E9%92%89%E9%92%89%E7%9B%B4%E6%92%AD%E5%BD%95%E5%83%8F/</link>
+      <pubDate>Sun, 21 Jun 2020 14:53:17 +0800</pubDate>
+      
+      <guid>https://masterenlu.github.io/blogSite/2020/06/fiddler-n_m3u8dl-cli-%E4%B8%8B%E8%BD%BD%E9%92%89%E9%92%89%E7%9B%B4%E6%92%AD%E5%BD%95%E5%83%8F/</guid>
+      <description>前言 最近在准备最优化的考试，需要反复看钉钉上的直播录像，但是钉钉自带的播放器功能实在太拉胯了，老师又不给开放下载权限，只能采取这种抓包的方式</description>
+    </item>
+    
+    <item>
+      <title>从零开始完成人工智能大作业</title>
+      <link>https://masterenlu.github.io/blogSite/2020/05/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AE%8C%E6%88%90%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E4%BD%9C%E4%B8%9A/</link>
+      <pubDate>Mon, 18 May 2020 12:53:32 +0800</pubDate>
+      
+      <guid>https://masterenlu.github.io/blogSite/2020/05/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AE%8C%E6%88%90%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E4%BD%9C%E4%B8%9A/</guid>
+      <description>写在前面 2020年5月6日，最后一节人工智能课上，老师宣布将期末考试改成大作业的形式（其实之前就说过，但是具体是哪天我忘了），要求使用 cnn 网络</description>
+    </item>
     
     <item>
       <title>记录一件比较坑的事</title>

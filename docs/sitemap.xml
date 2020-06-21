@@ -4,41 +4,139 @@
   
   <url>
     <loc>https://masterenlu.github.io/blogSite/categories/</loc>
-    <lastmod>2020-05-06T11:17:47+08:00</lastmod>
+    <lastmod>2020-06-21T14:53:17+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/fiddler/</loc>
+    <lastmod>2020-06-21T14:53:17+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/2020/06/fiddler-n_m3u8dl-cli-%E4%B8%8B%E8%BD%BD%E9%92%89%E9%92%89%E7%9B%B4%E6%92%AD%E5%BD%95%E5%83%8F/</loc>
+    <lastmod>2020-06-21T14:53:17+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/m3u8/</loc>
+    <lastmod>2020-06-21T14:53:17+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://masterenlu.github.io/blogSite/</loc>
-    <lastmod>2020-05-06T11:17:47+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://masterenlu.github.io/blogSite/tags/outlook/</loc>
-    <lastmod>2020-05-06T11:17:47+08:00</lastmod>
+    <lastmod>2020-06-21T14:53:17+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://masterenlu.github.io/blogSite/posts/</loc>
-    <lastmod>2020-05-06T11:17:47+08:00</lastmod>
+    <lastmod>2020-06-21T14:53:17+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://masterenlu.github.io/blogSite/series/</loc>
-    <lastmod>2020-05-06T11:17:47+08:00</lastmod>
+    <lastmod>2020-06-21T14:53:17+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://masterenlu.github.io/blogSite/tags/</loc>
+    <lastmod>2020-06-21T14:53:17+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/%E6%8A%93%E5%8C%85/</loc>
+    <lastmod>2020-06-21T14:53:17+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/categories/%E6%AD%A3%E7%BB%8F%E4%BA%8B/</loc>
+    <lastmod>2020-06-21T14:53:17+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/series/%E8%B8%A9%E5%9D%91/</loc>
+    <lastmod>2020-06-21T14:53:17+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/%E9%92%89%E9%92%89/</loc>
+    <lastmod>2020-06-21T14:53:17+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/cnn/</loc>
+    <lastmod>2020-05-18T12:53:32+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/pytorch/</loc>
+    <lastmod>2020-05-18T12:53:32+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/resnet/</loc>
+    <lastmod>2020-05-18T12:53:32+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/2020/05/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AE%8C%E6%88%90%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%A4%A7%E4%BD%9C%E4%B8%9A/</loc>
+    <lastmod>2020-05-18T12:53:32+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/series/%E4%BD%9C%E4%B8%9A/</loc>
+    <lastmod>2020-05-18T12:53:32+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2020-05-18T12:53:32+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/</loc>
+    <lastmod>2020-05-18T12:53:32+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://masterenlu.github.io/blogSite/tags/outlook/</loc>
     <lastmod>2020-05-06T11:17:47+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -60,13 +158,6 @@
   
   <url>
     <loc>https://masterenlu.github.io/blogSite/2020/05/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%BB%B6%E6%AF%94%E8%BE%83%E5%9D%91%E7%9A%84%E4%BA%8B/</loc>
-    <lastmod>2020-05-06T11:17:47+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://masterenlu.github.io/blogSite/series/%E8%B8%A9%E5%9D%91/</loc>
     <lastmod>2020-05-06T11:17:47+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
