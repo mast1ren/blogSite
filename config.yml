@@ -1,6 +1,6 @@
 baseURL: https://masterenlu.github.io/blogSite/
 languageCode: en-us
-title: masteren的填坑之旅
+title: masteren小记
 theme: pure
 publishDir: docs
 defaultContentLanguage: zh  # en/zh/...
@@ -120,7 +120,7 @@ params:
 
   # Comment
   comment:
-    type: gitalk # type disqus/gitalk/valine 启用哪种评论系统
+    type: valine # type disqus/gitalk/valine 启用哪种评论系统
     disqus: your_disqus_name # enter disqus shortname here
     gitalk: # gitalk. https://gitalk.github.io/
       owner: masterenlu #必须. GitHub repository 所有者，可以是个人或者组织。
@@ -129,15 +129,16 @@ params:
       ClientID: 309baa6c832ef5efe449 #必须. GitHub Application Client ID.
       ClientSecret: a76235be660016976d58a835cac77e3fb8dff763 #必须. GitHub Application Client Secret.
     valine: # Valine. https://valine.js.org
-      appid: # your leancloud application appid
-      appkey: # your leancloud application appkey
-      notify: # mail notifier , https://github.com/xCss/Valine/wiki
-      verify: # Verification code
-      placeholder: enjoy~ # comment box placeholder
-      avatar: mm # gravatar style
-      meta: nick,mail # custom comment header
+      appid: uyOzLkPkrEHNxBbyyezpspJN-gzGzoHsz # your leancloud application appid
+      appkey: mD4a5rcIkNlHSIijYaRyUvdI # your leancloud application appkey
+      notify: true # mail notifier , https://github.com/xCss/Valine/wiki
+      verify: true # Verification code
+      placeholder: 说点啥吧 # comment box placeholder
+      avatar: retro # gravatar style
+      meta: nick,mail,link # custom comment header
+      recordIP: true
       pageSize: 10 # pagination size
-      visitor: false # Article reading statistic https://valine.js.org/visitor.html
+      visitor: true # Article reading statistic https://valine.js.org/visitor.html
 
   # Donate
   donate:
@@ -154,11 +155,11 @@ params:
   # PV
   pv:
     busuanzi:
-      enable: true # 不蒜子统计
+      enable: false # 不蒜子统计
     leancloud:
-      enable: false # leancloud统计
-      app_id: # leancloud <AppID>
-      app_key: # leancloud <AppKey>
+      enable: True # leancloud统计
+      app_id: uyOzLkPkrEHNxBbyyezpspJN-gzGzoHsz # leancloud <AppID>
+      app_key: mD4a5rcIkNlHSIijYaRyUvdI # leancloud <AppKey>
 
   # wordcount
   postCount:
