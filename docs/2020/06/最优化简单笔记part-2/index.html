@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        masteren小记</title>
+        最优化简单笔记Part 2 - masteren小记
+      </title>
     <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,25 +23,34 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  
+  <meta name="description" content="学习最优化路上的一些记录" />
   <meta name="generator" content="Hugo 0.69.0 with theme pure" />
-  <title>masteren小记</title>
+  <title>最优化简单笔记Part 2 - masteren小记</title>
   
-  <link rel="alternate" type="application/rss+xml" href="https://masterenlu.github.io/blogSite/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" title="masteren小记" />
   
   <link rel="stylesheet" href="https://masterenlu.github.io/blogSite/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="机器学习" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://masterenlu.github.io/blogSite/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" />
-<meta property="og:updated_time" content="2020-06-23T15:54:28+08:00" />
-<meta itemprop="name" content="机器学习">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="机器学习"/>
-<meta name="twitter:description" content=""/>
+  <meta property="og:title" content="最优化简单笔记Part 2" />
+<meta property="og:description" content="学习最优化路上的一些记录" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-2/" />
+<meta property="article:published_time" content="2020-06-23T15:54:28+08:00" />
+<meta property="article:modified_time" content="2020-06-23T15:54:28+08:00" /><meta property="og:see_also" content="https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-1/" />
+<meta property="og:see_also" content="https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-1/" />
+
+<meta itemprop="name" content="最优化简单笔记Part 2">
+<meta itemprop="description" content="学习最优化路上的一些记录">
+<meta itemprop="datePublished" content="2020-06-23T15:54:28&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-23T15:54:28&#43;08:00" />
+<meta itemprop="wordCount" content="179">
+
+
+
+<meta itemprop="keywords" content="数学,最优化导论,机器学习," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="最优化简单笔记Part 2"/>
+<meta name="twitter:description" content="学习最优化路上的一些记录"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -300,76 +310,136 @@
 
     
     
-<main class="main" role="main">
-    <article class="content article article-tags post-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">机器学习</h1>
-            <p class="text-muted hidden-xs">共 21 个标签</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags">All</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/blog/">blog</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/cnn/">CNN</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/fiddler/">Fiddler</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/html/">html</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/hugo/">hugo</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/m3u8/">m3u8</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/outlook/">outlook</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/pytorch/">PyTorch</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/resnet/">ResNet</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/terminal/">terminal</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/windows/">Windows</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/windows-terminal/">Windows-Terminal</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/">卷积神经网络</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/">图像分类</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/%E6%8A%93%E5%8C%85/">抓包</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/%E6%95%B0%E5%AD%A6/">数学</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/%E6%9C%80%E4%BC%98%E5%8C%96%E5%AF%BC%E8%AE%BA/">最优化导论</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/%E6%B3%A8%E5%86%8C%E8%A1%A8/">注册表</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/%E9%82%AE%E7%AE%B1/">邮箱</a></li>
-                    <li><a href="https://masterenlu.github.io/blogSite/tags/%E9%92%89%E9%92%89/">钉钉</a></li>
-                </ul>
-            </nav>
-        </header>
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-2/"
+    >最优化简单笔记Part 2</a
+  >
+</h1>
+
+      <div class="article-meta">
         
-        <div class="article-body">
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-06-23 15:54:28 &#43;0800 CST"
-                itemprop="datePublished">2020-06-23</time>
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-2/" class="article-date">
+  <time datetime="2020-06-23 15:54:28 &#43;0800 CST" itemprop="datePublished">2020-06-23</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/blogSite/categories/%E6%AD%A3%E7%BB%8F%E4%BA%8B/"> 正经事 </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/blogSite/tags/%E6%95%B0%E5%AD%A6/"> 数学 </a>
+    <a class="article-tag-link" href="/blogSite/tags/%E6%9C%80%E4%BC%98%E5%8C%96%E5%AF%BC%E8%AE%BA/"> 最优化导论 </a>
+    <a class="article-tag-link" href="/blogSite/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"> 机器学习 </a>
+  </span>
+
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-2/" class="leancloud_visitors"  data-flag-title="最优化简单笔记Part 2">0</span>
+    </span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-2/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 179字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="集合约束和无约束优化问题">集合约束和无约束优化问题</h2>
+<blockquote>
+<p>例题1 求二元函数 $\mathcal f(x_1,x_2)=5x_1+8x_2+x_1x_2-x_1^2-2x_2^2$ 的一阶和二阶导数。
+$$
+Df(x)=[5+x_2-2x_1, 8+x_1-4x_2] \<br>
+\triangledown f(x)=Df(x)^\intercal \<br>
+D^2f(x) = \triangledown f(x)&rsquo; =
+\begin{bmatrix}
+5+x_2-2x_1 \<br>
+8+x_1-4x_2
+\end{bmatrix}
+&lsquo;=
+\begin{bmatrix}
+-2 &amp; 1\<br>
+1 &amp; -4
+\end{bmatrix}
+$$
+可以看到的是，这个函数的二元函数的二阶导数是对梯度求导，而不是直接对一阶导数求导。</p>
+</blockquote>
+<p>$\vec d$ 为 $n$ 元实值函数 $\mathcal f: \mathbb R^n \rarr \mathbb R$ 在 $\vec x \in \Omega$ 的一个可行方向，那么函数在这个点沿 $\vec d$ 方向的方向导数为：$\vec d^\intercal \triangledown \mathcal f(x)$</p>
+<blockquote>
+<p>$$
+\begin{aligned}
+\frac{\partial \mathcal f}{\partial \mathcal d}(x)&amp;=\lim\limits_{a\rarr0}\frac{\mathcal f(x+ad)-\mathcal f(x)}{a}\<br>
+&amp;=\frac{d}{da}\mathcal f(x+ad)|_{a=0} \<br>
+&amp;=Df(x)d\<br>
+&amp;=\triangledown\mathcal f(x)^\intercal d\<br>
+&amp;=d^\intercal \triangledown \mathcal f(x)
+\end{aligned}
+$$</p>
+</blockquote>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li>
+      <strong>原创内容，转载请注明出处</strong>
+    </li>
+    <li class="post-copyright-link ">
+      <strong>本文链接: </strong>
+      <a href="https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-2/" title="最优化简单笔记Part 2" target="_blank" rel="external">https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-2/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by-sa/2.5/deed.zh" target="_blank" rel="external">CC BY-SA 2.5</a>
+    </li>
+  </ul>
+</blockquote>
+
+    </div>
+  </article>
+<section id="comments">
+    <div id="vcomments"></div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-1/" title="最优化简单笔记Part-1"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="true"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
         </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-2/">最优化简单笔记Part 2</a>
-        </h3>
     </div>
-    <div class="panel-footer">
-        <a href="https://masterenlu.github.io/blogSite/tags/%E6%95%B0%E5%AD%A6" class="label label-default mb">数学</a>
-        <a href="https://masterenlu.github.io/blogSite/tags/%E6%9C%80%E4%BC%98%E5%8C%96%E5%AF%BC%E8%AE%BA" class="label label-default mb">最优化导论</a>
-        <a href="https://masterenlu.github.io/blogSite/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0" class="label label-default mb">机器学习</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-06-21 16:53:44 &#43;0800 CST"
-                itemprop="datePublished">2020-06-21</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-1/">最优化简单笔记Part-1</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://masterenlu.github.io/blogSite/tags/%E6%95%B0%E5%AD%A6" class="label label-default mb">数学</a>
-        <a href="https://masterenlu.github.io/blogSite/tags/%E6%9C%80%E4%BC%98%E5%8C%96%E5%AF%BC%E8%AE%BA" class="label label-default mb">最优化导论</a>
-        <a href="https://masterenlu.github.io/blogSite/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0" class="label label-default mb">机器学习</a>
-    </div>
-</article>
-            </div>
-        </div>
-    </article>
+</nav>
+
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://github.com/masterenlu" target="_blank" title="github" data-toggle=tooltip data-placement=top >
@@ -445,6 +515,28 @@
         
         hasInnerContainers: true,
     });
+</script>
+
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine"></script>
+<script type="text/javascript">
+    var GUEST = ['nick', 'mail', 'link'];
+    var meta = 'nick,mail,link';
+    meta = meta.split(',').filter(function (item) {
+        return GUEST.indexOf(item) > -1;
+    });
+    new Valine({
+        el: '#vcomments',
+        verify: true ,
+        notify: true ,
+        appId: 'uyOzLkPkrEHNxBbyyezpspJN-gzGzoHsz',
+        appKey: 'mD4a5rcIkNlHSIijYaRyUvdI',
+        placeholder: '说点啥吧',
+        avatar: 'retro',
+        meta: meta,
+        pageSize: '10' || 10,
+        visitor: true 
+});
 </script>
 
   </body>
