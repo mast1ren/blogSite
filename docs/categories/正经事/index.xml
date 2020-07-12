@@ -6,27 +6,18 @@
     <description>Recent content in 正经事 on masteren小记</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2020 15:54:28 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 16:53:44 +0800</lastBuildDate>
     
         <atom:link href="https://masterenlu.github.io/blogSite/categories/%E6%AD%A3%E7%BB%8F%E4%BA%8B/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>最优化简单笔记Part 2</title>
-      <link>https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-2/</link>
-      <pubDate>Tue, 23 Jun 2020 15:54:28 +0800</pubDate>
-      
-      <guid>https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-2/</guid>
-      <description>集合约束和无约束优化问题 例题1 求二元函数 $\mathcal f(x_1,x_2)=5x_1+8x_2+x_1x_2-x_1^2-2x_2^2$ 的一阶和二阶导数。 $$ Df(x)=[5+x_2-2x_1, 8+x_1-4x_2] \ \triangledown f(x)=Df(x)^\intercal \ D^2f(x) = \triangledown f(x)&amp;rsquo; = \begin{bmatrix} 5+x_2-2x_1 \ 8+x_1-4x_2 \end{bmatrix} &amp;lsquo;= \begin{bmatrix} -2 &amp;amp; 1\ 1 &amp;amp; -4 \end{bmatrix} $$ 可以看到的是，这个函数的</description>
-    </item>
-    
-    <item>
-      <title>最优化简单笔记Part-1</title>
-      <link>https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-1/</link>
+      <title>最优化简单笔记</title>
+      <link>https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Sun, 21 Jun 2020 16:53:44 +0800</pubDate>
       
-      <guid>https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0part-1/</guid>
-      <description>一些吐槽 由于之前上最优化导论没有认真听，导致现在快考试了两眼一摸黑，在加上临近期末的各种事务的堆积，只能挤时间提前开始重新学习这门数学，成为</description>
+      <guid>https://masterenlu.github.io/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0/</guid>
+      <description>咕了 一些吐槽 由于之前上最优化导论没有认真听，导致现在快考试了两眼一摸黑，在加上临近期末的各种事务的堆积，只能挤时间提前开始重新学习这门数学，</description>
     </item>
     
     <item>

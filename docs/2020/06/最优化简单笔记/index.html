@@ -44,7 +44,7 @@
 <meta itemprop="description" content="学习最优化路上的一些记录">
 <meta itemprop="datePublished" content="2020-06-21T16:53:44&#43;08:00" />
 <meta itemprop="dateModified" content="2020-06-21T16:53:44&#43;08:00" />
-<meta itemprop="wordCount" content="417">
+<meta itemprop="wordCount" content="1819">
 
 
 
@@ -356,22 +356,106 @@
     </span>
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/blogSite/2020/06/%E6%9C%80%E4%BC%98%E5%8C%96%E7%AE%80%E5%8D%95%E7%AC%94%E8%AE%B0/#comments"
             class="article-comment-link">评论</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 417字</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 1分 </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1819字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4分 </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <h2 id="一些吐槽">一些吐槽</h2>
+      <p>咕了</p>
+<h2 id="一些吐槽">一些吐槽</h2>
 <p>由于之前上最优化导论没有认真听，导致现在快考试了两眼一摸黑，在加上临近期末的各种事务的堆积，只能挤时间提前开始重新学习这门数学，成为时间管理带师。</p>
-<h2 id="需要了解的储备知识">需要了解的储备知识</h2>
+<h2 id="需要了解的部分储备知识">需要了解的部分储备知识</h2>
 <h3 id="有关向量的线性相关">有关向量的线性相关</h3>
 <p>对于给定的向量组 $A: \alpha_1, \alpha_2, &hellip; \alpha_n$，如果如果存在一组不全为零的实数 $k_1, k_2, &hellip;k_n$，使得 $\sum\limits_{i=1}^{n}k_i\alpha_i = 0$，则认为向量组 $A$ 线性相关，否则为线性无关。</p>
 <p>可以这样判断，对于向量组 $A$，如果存在一个向量 $\alpha_i$，可以用 $A$ 中 $\alpha_i$ 以外的有限个向量表示出来，那么这个向量组为线性相关，否则为线性无关。</p>
-<p>$$if \quad \sum\limits_{i=1}^{n}k_i\alpha_i=0 \ then \quad \alpha_i = -\frac{1}{k_i}\sum\limits_{j=1,j \ne i}^{n}k_j\alpha_j$$</p>
+<p>$$
+if \quad \sum\limits_{i=1}^{n}k_i\alpha_i=0 \<br>
+then \quad \alpha_i = -\frac{1}{k_i}\sum\limits_{j=1,j \ne i}^{n}k_j\alpha_j
+$$</p>
 <h3 id="子空间">子空间</h3>
 <p>如果一个空间 $v$ 是 $\mathbb{R}^n$ 的子空间，那么这个空间对于向量的加法和数乘是封闭的。</p>
 <p>如果有 $\alpha_1,\alpha_2,&hellip;\alpha_n \in v$，那么有 $span[\alpha_1, \alpha_2,&hellip;\alpha_n]=v$ 。</p>
 <p>如果 $\forall \alpha_i \in v$，$\alpha_i$ 可用 $v$ 中的一组线性无关的向量表示出来，那么这组线性无关的向量为这个子空间的基，这个子空间的维数 $dim\ v$ = 基的向量个数。对于一个基，$\alpha_i \in v$ 可用这个基唯一地表示出来。</p>
+<h3 id="矩阵">矩阵</h3>
+<p>对于一个矩阵，其秩为列向量或行向量的极大无关组中的向量个数。</p>
+<p>对于一个矩阵 $A$，如果进行非零数乘、列交换或者加入可由其中的列向量表示出来的新列向量，矩阵的秩不变。</p>
+<h4 id="行列式">行列式</h4>
+<p>如果一个行列式中有两列或者两行完全一致，那么这个行列式为 0。</p>
+<p>如果一个矩阵的行列式为 0，那么这个矩阵被称为奇异矩阵。</p>
+<p>对于一个线性方程组 $A\vec{x}=\vec{b}$，$A$ 被称为系数矩阵，$[A,\vec{b}]$ 为增广矩阵。</p>
+<p>$$
+a_{11} x_1+a_{12} x_2+\cdots+a_{1n} x_n=b_1  \<br>
+a_{21} x_1+a_{22} x_2+\cdots+a_{2n} x_n=b_2 \<br>
+\vdots \<br>
+a_{m1} x_1+a_{m2} x_2+\cdots+a_{mn} x_n=b_m \<br>
+A = [a_1,a_2,\cdots,a_n],\vec b = [b_1,b_2,\cdots,b_m]^T
+$$</p>
+<p>如果一个线性方程组的增广矩阵和系数矩阵的秩相等，那么这个方程组有解。</p>
+<p>$$
+\begin{aligned}
+&amp;\bf{证明：} \<br>
+&amp;如果 \quad A\vec x=\vec b \quad 有解 \<br>
+&amp;那么有 \quad \vec b = \sum\limits_{i=1}^n A_ix_i \<br>
+&amp;一定有\space rank(A)=rank(A,b) \<br>
+&amp;反之也可证明
+\end{aligned}
+$$</p>
+<p>如果 $A^{n×n}$ 是非奇异矩阵，那么方程组有唯一解。如果 $rank(A) &lt; n$，那么这个方程组有无穷多个解。</p>
+<h3 id="范数">范数</h3>
+<p>对于向量 $\vec x, \vec y$，$ |\textbf{x}+\textbf{y}| \le |\textbf{x}| + |\textbf{y}|$
+$$
+\begin{align*}
+\bf{证明：} \<br>
+|\textbf{x}+\textbf{y}|^2 &amp;= &lt;\textbf{x}+\textbf{y},\textbf{x}+\textbf{y}&gt; \<br>
+&amp;= |\textbf{x}|^2 + |\textbf{y}|^2 + 2&lt;\textbf{x},\textbf{y}&gt; \<br>
+&amp;\leq |\textbf{x}|^2 + |\textbf{y}|^2 + 2|\textbf{x}|\cdot|\textbf{y}| \<br>
+&amp;= (|\textbf{x}| + |\textbf{y}|)^2 \<br>
+\end{align*}
+$$</p>
+<p>向量的 P 范数：$|\textbf{x}|_p = (|\textbf{x}_1|^p+\cdots+|\textbf{x}_n|^p)^\frac{1}{p}$。当 $p\rarr \infin$ 时，$|\textbf{x}|_p = \max\limits_i{|\textbf{x}_i|}$</p>
+<h3 id="线性变换">线性变换</h3>
+<p>如果在空间 $\mathbb{R}^n$ 和 $\mathbb{R}^m$ 中的一个函数 $\mathcal{L}: \mathbb{R}^n \rarr \mathbb{R}^m$</p>
+<ul>
+<li>对于任意的 $\textbf{x} \in \mathbb{R}^n$ 和 $a \in \mathbb{R}$，有 $\mathcal{L}(a\textbf{x})=a\mathcal{L}(\textbf{x})$</li>
+<li>对于任意 $\textbf{x}, \textbf{y} \in \mathbb{R}^n$，有 $\mathcal{L}(\textbf{x}+\textbf{y})=\mathcal{L}(\textbf{x})+\mathcal{L}(\textbf{y})$</li>
+</ul>
+<p>那么这个函数可被称为一个线性变换。</p>
+<p>$A=P^{-1}BP$，$B$ 是 $A$ 的相似矩阵。</p>
+<p>线性变换可以用矩阵表示，相似矩阵表示相同的线性变换在不同的基底下的表示</p>
+<h3 id="正交投影">正交投影</h3>
+<p>$\mathcal V$ 是 $\mathbb{R}^n$ 的子空间，那么 $\mathcal V$ 的正交补 $\mathcal V^\perp = {\textbf{x}:\textbf{x}^T \mathcal v=0, \forall \mathcal v \in \mathcal V}$，其也是 $\mathbb{R}^n$ 的子空间。对 $\mathbb{R}^n$ 上的任意向量 $\textbf{x}$，都有唯一的 $\textbf{x} = \textbf{x}_1+\textbf{x}_2$，其中 $\textbf{x}_1 \in \mathcal V, \textbf{x}_2 \in \mathcal V^\perp$</p>
+<blockquote>
+<p>需要注意的是，这里的 $\mathbb R^n = \mathcal V \oplus \mathcal V^\perp$，即 $\mathbb R^n$ 由 $\mathcal V$ 和 $\mathcal V^\perp$ 张成，而不能理解为 $\mathbb R^n = \mathcal V \cup \mathcal V^\perp$</p>
+</blockquote>
+<p>$∀x∈R^n$，都有 $Px ∈V$ 且 $x- Px ∈V^⊥$，线性变换 $P$ 称为正交投影算子。$A∈R^{m×n}$</p>
+<p>像空间 $R(A) ≜{Ax:x∈R^n}$，零空间 $N(A)≜{x∈R^n:Ax=0}$，像空间和零空间都是子空间。</p>
+<p>定理：矩阵 $P$ 是子空间 $\mathcal V = \mathcal R(P)$ 上的正交投影算子，当且仅当 $P^2 = P = P^\intercal$
+$$
+\begin{aligned}
+&amp;证明： \<br>
+&amp;必要性：\<br>
+&amp;由于 P 是 \mathcal R(P) 上的正交投影算子，Px \in \mathcal R(P)，x-Px \in \mathcal R(P)^\perp=\mathcal N(P^\intercal) \<br>
+&amp;\forall x, P^\intercal(I-P)x =0\<br>
+&amp;即\space \forall x, (P^\intercal-P^\intercal P)x=0，P^\intercal=P^\intercal P \<br>
+&amp;(P^\intercal)^\intercal=P^\intercal P=P=P^\intercal=P^2 \<br>
+&amp;充分性：\<br>
+&amp;\forall x,y, (Py)^\intercal(I-P)x=y^\intercal P^\intercal(I-P)x=y^\intercal(P^\intercal-P^\intercal P)x=0\<br>
+&amp;(I-P)x=0 \in \mathcal N(P^\intercal)=\mathcal R(P)^\perp\<br>
+&amp;证毕
+\end{aligned}
+$$</p>
+<h3 id="二次型函数">二次型函数</h3>
+<p>对于一个函数 $\mathcal f: \mathbb R^n \rarr \mathbb R, \mathcal f(x) = x^\intercal Qx$，$Q$ 为对称实矩阵，被称为二次型函数，如果 $\forall x, x^\intercal Qx &gt; 0$，则二次型是正定的，$\ge0$ 为半正定，否则为负定，半负定或不定。</p>
+<p>如果一个二次型是正定的，当且仅当 $Q$ 的每一个顺序主子式是正定的或 $Q$ 的每一个特征值是正数。</p>
+<h3 id="仿射函数">仿射函数</h3>
+<p>对于一个在 $\mathbb R^n \rarr \mathbb R^m$ 上的线性函数 $\mathcal L$，如果有 $x \in \mathbb R^n, y \in \mathbb R^m, \mathcal A(x) = \mathcal L(x) + y$，那么这个函数 $\mathcal A$称为仿射函数。如果一个函数 $\mathcal f: \Omega \rarr \mathbb R^m$，在 $x_0$ 处存在一个仿射函数能够模拟 $\mathcal f$，即
+$$
+\lim\limits_{x\rarr x_0} \frac{|\mathcal f(x) - \mathcal A(x)|}{|x-x_0|}=0\<br>
+\mathcal A(x_0)= \mathcal f(x_0)=\mathcal L(x_0)+y \<br>
+y=\mathcal f(x_0)-\mathcal L(x_0)\<br>
+\mathcal A(x)=\mathcal L(x) + y =\mathcal L(x) + \mathcal f(x_0) - \mathcal L(x_0) = \mathcal L(x-x_0) + \mathcal f(x_0)
+$$
+那么说在 $x_0$ 上可微。</p>
 
     </div>
     <div class="article-footer">
@@ -501,7 +585,7 @@
 <script src="https://cdn.jsdelivr.net/npm/valine"></script>
 <script type="text/javascript">
     var GUEST = ['nick', 'mail', 'link'];
-    var meta = 'nick,mail';
+    var meta = 'nick,mail,link';
     meta = meta.split(',').filter(function (item) {
         return GUEST.indexOf(item) > -1;
     });
@@ -511,7 +595,7 @@
         notify: true ,
         appId: 'uyOzLkPkrEHNxBbyyezpspJN-gzGzoHsz',
         appKey: 'mD4a5rcIkNlHSIijYaRyUvdI',
-        placeholder: 'enjoy~',
+        placeholder: '说点啥吧',
         avatar: 'retro',
         meta: meta,
         pageSize: '10' || 10,
